@@ -1,0 +1,17 @@
+
+    .presentacion {
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5625rem;
+            text-align: center;
+            font-weight: bold;
+            color: $tituloPresentacion;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: .9375rem;
+            text-align: justify;
+            color: $textoPresentacion;
+        }
+    }

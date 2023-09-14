@@ -1,0 +1,120 @@
+
+main {
+    .sectionLogo {
+        margin: 0;
+        width: 100%;
+        height: 28rem;
+        background-image: url(../assets/images/seccionprincipal.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            h1 {
+                text-align: center;
+                color: $colorHeader;
+                text-decoration: none;
+                font-size: 3.75rem;
+                font-weight: bold;
+                letter-spacing: .625rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+
+    .sectionPromo {
+        margin-top: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 3.125rem;
+            color: $colorHeader;
+            font-size: 3.125rem;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: .25rem;
+            text-align: center;
+        }
+
+        .contenedorCarrusel {
+            width: auto;
+
+            .carousel-inner img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .sectionTratamiento {
+        margin-top: 12.5rem;
+        margin-bottom: 12.5rem;
+
+        div {
+            h2 {
+                width: auto;
+                margin-bottom: 6.25rem;
+                color: $colorHeader;
+                font-size: 40px;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: .25rem;
+                text-align: center;
+            }
+        }
+
+        .contieneTratamientos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .tratamientoHombre {
+                background-color: $fondoImagenTratamientoHombre;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin-top: 10px;
+                }
+
+                button {
+                    background-color: $botonTratamientoHombre;
+
+                    a {
+                        text-decoration: none;
+                        color: #192241;
+                        font-size: 1.25rem;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+            }
+
+            .tratamientoMujer {
+                background-color: $fondoImagenTratamientoMujer;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    margin-top: 10px;
+                }
+
+                button {
+                    background-color: $botonTratamientoMujer;
+
+                    a {
+                        text-decoration: none;
+                        color: #EDC8C8;
+                        font-size: 1.25rem;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+
+            }
+        }
+    }
+}

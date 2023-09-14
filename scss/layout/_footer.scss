@@ -1,0 +1,24 @@
+
+footer{
+    .sectionFooter {
+        background-color: $colorHeader;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .sectionRedes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                text-decoration: none;
+                color: $beige;
+                font-size: 1.125rem;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+        
+    }
+}

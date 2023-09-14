@@ -1,0 +1,31 @@
+/*VARIABLES Y MIXINS*/
+@import"./utilities.scss/variables";
+@import "./utilities.scss/mixins";
+
+/* RESET Y TIPOGRAFIAS*/
+@import "./base/reset";
+@import "./base/typo";
+
+
+/*LAYOUT*/
+@import"./layout/header";
+@import"./layout/main_index";
+@import "./layout/footer";
+@import "./layout/main_blog";
+@import "./layout/main_contactanos";
+@import "./layout/main_inicia_sesion";
+@import "./layout/main_promociones";
+@import "./layout/main_registrate";
+@import "./layout/main_sobre_nosotros";
+@import "./layout/main_tratamiento";
+@import "./layout/tecnologia";
+@import "./layout/main_hombre";
+@import "./layout/main_mujer";
+
+
+/* COMPONENTES*/
+
+/* MEDIA QUERY*/    
+@import "./media/media375";
+@import "./media/media425";
+@import "./media/media768";

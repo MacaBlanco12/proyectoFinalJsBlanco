@@ -1,0 +1,1072 @@
+/*# sourceMappingURL=style.css.map */
+/* fuentes 
+
+colores
+#253779 azul 
+#F8EBF2 rosita
+#FBDFEB rosa
+#EDC8C8 rosa oscuro 
+#192241 AZUL 
+#1A2242 AZUL 
+#B7ACA3 BEIGE
+#2E3976 AZUL 
+
+ORDEN:
+DISPLAY
+ALTO Y ANCHO
+POSICIONAMIENTO DE LOS ELEMENTOS
+BOX-MODELING
+DECLARAR COLORES
+font-family: 'Montserrat', sans-serif;
+font-family: "Champagne & Limousines V1";
+
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*border: 1px solid red (para marcar que elementos desboordan)
+body {
+    background-color: #f5ebf0;
+    width: 100%;
+}*/
+
+/*HEADER------------------*/
+
+/*SECCION DEL LOGO TITULO------------------
+.sectionLogo div h1 {
+    text-align: center;
+    color: #192241;
+    text-decoration: none;
+    font-size: 3.75rem;
+    font-weight: bold;
+    letter-spacing: .625rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*SECCION DEL LOGO IMAGEN DE FONDO-----------------
+.sectionLogo {
+    margin: 0;
+    width: 100%;
+    height: 28rem;
+    background-image: url(../assets/images/seccionprincipal.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/ 
+
+/*SECCION DEL MENU 
+.colorNav {
+    background-color: #192241;
+}
+
+.colorNav a {
+    color: #EDC8C8;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+
+/*SECCION DE PROMOCIONES-----------------
+.sectionPromo {
+    margin-top: 12.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*TITULO----------------
+.sectionPromo {
+    margin-bottom: 3.125rem;
+    color: #253779;
+    font-size: 3.125rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .25rem;
+    text-align: center;
+}
+
+CARRUSEL INDEX---------------
+
+
+.contenedorCarrusel {
+    width: auto;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*SECCION PROMOCIONES-----------------*/
+.promosIndividuales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*SECCION TRATAMIENTO------------------
+.sectionTratamiento {
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
+}
+
+/*TITULO TRATAMIENTO------------------
+.sectionTratamiento h2 {
+    width: auto;
+    margin-bottom: 6.25rem;
+    color: #192241;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .25rem;
+    text-align: center;
+}
+
+/*PAGINA TRATAMIENTO------------------*/
+.videoPrincipalTratamiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.videoPrincipalTratamiento video{
+    margin-top: 10p;
+    top: 0;
+    left: 0;
+    width: 50%;
+  
+    z-index: -1;    
+}
+/*
+.contieneTratamientos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*TRATAMIENTO HOMBRES------------------
+.tratamientoHombre img {
+    margin-top: 10px;
+}
+
+.tratamientoHombre {
+    background-color: #253779;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+.videoHombre{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/*TRATAMIENTO MUJER------------------
+.contieneTratamientos img {
+    margin-top: 10px;
+}
+
+
+.tratamientoMujer {
+    background-color: #FBDFEB;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*BOTONES------------------
+.botonTratamientoM {
+    background-color: #253779;
+    width: 25%;
+}
+
+.botonTratamientoH {
+    background-color: #edbdbd;
+}
+
+.botonTratamientoM a {
+    text-decoration: none;
+    color: #EDC8C8;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonTratamientoH a {
+    text-decoration: none;
+    color: #192241;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/*PAGINA MUJER*/
+.main{
+    padding: .9375rem 1.875rem .9375rem 1.875rem ;
+    margin: .625rem .625rem .625rem .625rem ;
+    background-image: url(../assets/images/fondoMujer.png);
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-color: #192241;
+}
+.informacion {
+    font-family: "Champagne & Limousines V1";
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+    font-weight: bolder;
+    color: #253779;
+
+}
+.preguntas{
+    font-family: "Champagne & Limousines V1";
+    text-align: justify;
+    color: #192241;
+    font-weight: bold;
+    letter-spacing: .0625rem;
+}
+/*PAGINA HOMBRE*/
+.mainH{
+    padding: .9375rem 1.875rem .9375rem 1.875rem ;
+    margin: .625rem .625rem .625rem .625rem ;
+    background-image: url(../assets/images/fondoHombre.png);
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-color: #192241;
+}
+
+
+
+/*FOOTER-----------------
+
+.sectionFooter {
+    background-color: #192241;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionFooter a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #B7ACA3;
+    font-size: 1.125rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sectionRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+/*BLOG------------------
+.contieneArticulos {
+    background-color: #192241;
+    display: grid;
+    grid-template-columns: repeat(4, 1f);
+    grid-template-rows: repeat(3, 1f);
+    grid-template-areas:
+        "articulo1 articulo1 "
+        "articulo2 articulo2 "
+        "articulo3 articulo4 "
+        "articulo3 articulo4 "
+        "articulo5 articulo4 "
+        "articulo5 articulo4 ";
+    row-gap: 20px;
+    column-gap: 10px;
+    margin: 10px 20px 10px 20px;
+    align-content: center;
+}
+
+.articulo1 {
+    background-color: #192241;
+    margin: 10px 20px 10px 20px;
+    grid-area: articulo1;
+    display: flex;
+    align-items: center;
+}
+
+.articulo2 {
+    background-color: #f5ebf0;
+    grid-area: articulo2;
+    display: flex;
+    align-items: center;
+}
+
+.articulo3 {
+    background-color: #192241;
+    grid-area: articulo3;
+    display: flex;
+    align-items: center;
+}
+
+.articulo4 {
+    background-color: #f5ebf0;
+    grid-area: articulo4;
+    display: flex;
+    align-items: center;
+}
+
+.articulo5 {
+    background-color: #192241;
+    grid-area: articulo5;
+    display: flex;
+    align-items: center;
+}
+
+/*IMAGENES------------------
+.contieneArticulos img {
+    width: 30%;
+}
+
+/*TEXTO------------------
+.contieneArticulos p {
+    font-family: 'Montserrat', sans-serif;
+    color: #B7ACA3;
+    font-size: 1.125rem;
+    width: 90%;
+    font-weight: bold;
+
+}
+
+.contieneArticulos h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #edbdbd;
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+/*TRATAMIENTO----*/
+.videoTecno video {
+    width: 10%;
+    height: 20%;
+}
+
+
+
+.lista h2 {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    color: #edbdbd;
+    font-size: .9375rem;
+
+}
+
+.lista ul li {
+    font-family: 'Montserrat', sans-serif;
+    color: #B7ACA3;
+    font-size: .9375rem;
+}
+
+.comenzar a {
+    background-color: #EDC8C8;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #192241;
+    font-size: 1.875rem;
+}
+
+/*TECNOLOGIA----*/
+
+.sectionPrincipal {
+    position: relative;
+}
+
+.contieneVideoFondo video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+/*LOGIN----
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.inicia h1 {
+    color: #253779;
+    font-size: 2.1875rem;
+}
+
+.inicia {
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(215, 211, 211);
+    padding: 10px;
+    border: rgba(215, 211, 211, 0.614);
+}
+
+.formulario {
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.iniciaRegistro {
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iniciaRegistro h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #253779;
+    font-size: 2.1875rem;
+    text-align: center;
+}
+
+.iniciaRegistro p {
+    text-align: center;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #192241;
+    font-size: .9375rem;
+    background-color: #edbdbd;
+    padding: .625rem .625rem .625rem .625rem;
+    margin: .3125rem .3125rem .3125rem .3125rem;
+
+}
+
+.iniciaRegistro a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #253779;
+    background-color: #edbdbd;
+    font-size: 1.5625rem;
+    margin-top: 5%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+*/
+
+
+/*REGISTRO---
+.registrate h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #253779;
+    font-size: 2.1875rem;
+    text-align: center;
+}
+
+.formularioRegistro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmar a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #253779;
+    font-size: 1.5625rem;
+}
+
+.confirmar {
+    margin: .3125rem .3125rem .3125rem .3125rem;
+    padding: .3125rem .3125rem .3125rem .3125rem;
+    text-decoration: none;
+    background-color: #edbdbd;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.contieneBotones {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    width: 100%;
+    background-color: rgb(215, 211, 211);
+    padding: 10px;
+    border: rgba(215, 211, 211, 0.614);
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
+
+/*CONTACTANOS-*/
+.sectionConsulta {
+    font-weight: bold;
+    color: #edbdbd;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+}
+
+#validationCustom05 {
+    height: 150px;
+    resize: vertical;
+}
+
+.botonContacto {
+    margin-top: .75rem;
+    margin-bottom: .625rem;
+    background-color: #edbdbd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #FBDFEB;
+    border-bottom-color: #bab5b2;
+    border-bottom: #edbdbd;
+    border-style: groove;
+
+}
+
+.contactos {
+    text-align: center;
+    background-color: #192241;
+    font-weight: bolder;
+    color: #edbdbd;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mapa {
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+/*SOBRE NOSOTROS-*/
+.presentacion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9375rem;
+    text-align: center;
+
+}
+
+/*MEDIA QUERY 375 -*/
+@media (max-width: 375px) {
+    .contieneArticulos {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contieneArticulos h3 {
+        font-size: 1.25rem;
+    }
+
+    .contieneArticulos p {
+        font-size: .5rem;
+    }
+
+    .contieneArticulos img {
+        width: 30%;
+    }
+
+    /*header--*/
+    .cabecera ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*main--*/
+
+    .sectionLogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+    .contienePromos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo {
+        width: 80%;
+    }
+
+    .contieneTratamientos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tratamientoHombre {
+        background-color: #192241;
+        width: 100%;
+    }
+
+    .botonTratamientoM {
+        background-color: #253779;
+        width: 50%;
+    }
+
+    .tratamientoMujer {
+        background-color: #FBDFEB;
+        width: 100%;
+    }
+
+    .botonTratamientoH {
+        background-color: #253779;
+        width: 50%;
+    }
+
+    .botonTratamientoM a {
+        text-decoration: none;
+        color: #EDC8C8;
+        font-size: 15px;
+    }
+
+    .botonTratamientoH a {
+        text-decoration: none;
+        color: #192241;
+        font-size: 15px;
+    }
+
+    /*FOOOTER-*/
+
+
+    .footer {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .logoFooter img {
+        width: 50%;
+    }
+
+    .sectionContacto div a img {
+        width: 10%;
+    }
+
+    .sectionContacto a {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #B7ACA3;
+    }
+
+    .sectionRedes a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 8px;
+        text-align: center;
+        color: #B7ACA3;
+    }
+
+    .sectionRedes div a img {
+        width: 10%;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .sectionPromo h2 {
+        width: 100%;
+        font-size: 1.5625rem;
+    }
+
+    .sectionTratamiento h2 {
+        width: 100%;
+        font-size: 1.5625rem;
+    }
+}
+
+/*MEDIA QUERY 425 -*/
+@media (max-width: 425px) {
+    .contieneArticulos {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contieneArticulos h3 {
+        font-size: 25px;
+    }
+
+    .contieneArticulos p {
+        font-size: 25px;
+    }
+
+    .contieneArticulos img {
+        width: 40%;
+    }
+
+    /*header*/
+    .cabecera a {
+        font-size: 10px;
+    }
+
+    .cabecera ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Main*/
+    .sectionLogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionLogo h1 {
+        font-size: 12px;
+    }
+
+    .sectionMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+    .sectionMenu a {
+        font-size: 10px;
+    }
+
+
+    .sectionPromo h1 {
+        font-size: 25px;
+    }
+
+    .sectionPromo p {
+        font-size: 12px;
+    }
+
+    .contienePromos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionTratamiento h1 {
+        font-size: 25px;
+    }
+
+    .contieneTratamientos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tratamientoHombre {
+        background-color: #192241;
+        width: 100%;
+    }
+
+    .botonTratamientoM {
+        background-color: #253779;
+        width: 50%;
+    }
+
+    .tratamientoMujer {
+        background-color: #FBDFEB;
+        width: 100%;
+    }
+
+    .botonTratamientoH {
+        background-color: #253779;
+        width: 50%;
+    }
+
+    .botonTratamientoM a {
+        text-decoration: none;
+        color: #EDC8C8;
+        font-size: 15px;
+    }
+
+    .botonTratamientoH a {
+        text-decoration: none;
+        color: #192241;
+        font-size: 15px;
+    }
+
+    /*FOOOTER-*/
+    .footer {
+        width: 100%;
+    }
+
+    .logoFooter img {
+        width: 50%;
+    }
+
+    .sectionContacto div a img {
+        width: 10%;
+    }
+
+    .sectionContacto a {
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-align: center;
+        font-size: 8px;
+        color: #B7ACA3;
+    }
+
+    .sectionRedes a {
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        font-size: 8px;
+        text-align: center;
+        color: #B7ACA3;
+    }
+
+    .sectionRedes div a img {
+        width: 10%;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .iniciaRegistro {
+        width: 100%;
+    }
+
+    /*SECCION CONTACTANOS*/
+    .mapa {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+}
+
+/*MEDIA QUERY 768 -*/
+@media (max-width: 768px) {
+    .contieneArticulos {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contieneArticulos h3 {
+        font-size: 1.25rem;
+    }
+
+    .contieneArticulos p {
+        font-size: .5rem;
+    }
+
+    .contieneArticulos img {
+        width: 40%;
+    }
+
+    .cabecera a {
+        font-size: 10px;
+    }
+
+    .cabecera ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionLogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionLogo h1 {
+        font-size: 12px;
+    }
+
+    .sectionMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+    .sectionMenu a {
+        font-size: 10px;
+    }
+
+    .sectionPromo h1 {
+        font-size: 25px;
+    }
+
+    .sectionPromo p {
+        font-size: 12px;
+    }
+
+    .contienePromos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .promo img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionTratamiento h1 {
+        font-size: 25px;
+    }
+
+    .contieneTratamientos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tratamientoHombre {
+        background-color: #192241;
+        width: 100%;
+    }
+
+    .botonTratamientoM {
+        background-color: #253779;
+        width: 50%;
+    }
+
+    .tratamientoMujer {
+        background-color: #FBDFEB;
+        width: 100%;
+    }
+
+    .botonTratamientoH {
+        background-color: #edbdbd;
+        width: 50%;
+    }
+
+    .botonTratamientoM a {
+        text-decoration: none;
+        color: #EDC8C8;
+        font-size: 15px;
+    }
+
+    .botonTratamientoH a {
+        text-decoration: none;
+        color: #192241;
+        font-size: 15px;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 80%;
+    }
+
+    .iniciaRegistro {
+        width: 80%;
+    }
+}
+/*ANIMACION EN TITULO DE PROMOCIONES*/ 
+@keyframes aparecer{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    animation: aparecer 2s ease-in-out;
+  }
+
+
+  
+/* Establece un borde inicial en las imágenes dentro del carrusel */
+.carousel-item img {
+    border: 10px solid transparent; /* Borde inicial grueso de 10px y transparente */
+    transition: border-color 1s ease-in-out; /* Transición para el cambio de color del borde */
+  }
+  
+  /* Establece el borde negro al pasar el mouse sobre las imágenes */
+  .carousel-item:hover img {
+    border-color: #edbdbd; /* Cambia el color del borde a negro al pasar el mouse */
+  }
+  
+  /* Define una animación llamada "fadeOutBorder" para hacer desaparecer el borde */
+  @keyframes fadeOutBorder {
+    from {
+      border-color: #edbdbd;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+  
+  /* Aplica la animación a las imágenes dentro del carrusel cuando el mouse deja de estar encima */
+  .carousel-item:not(:hover) img {
+    animation: fadeOutBorder 2s ease-in-out;
+  }

@@ -1,0 +1,28 @@
+/*MEDIA QUERY 375 -*/
+@media (max-width: 375px) {
+    /*BLOG*/
+    .contieneArticulos {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        div {
+            display: flex;
+            flex-direction: column;
+            h3 {
+                font-size: 1.5625rem;
+            }
+
+            p {
+                font-size: .9375rem;
+            }
+
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+}
+

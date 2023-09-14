@@ -1,0 +1,76 @@
+ .videoPrincipalTratamiento {
+     @include flex1;
+
+     video {
+         margin-top: 10p;
+         top: 0;
+         left: 0;
+         width: 50%;
+         z-index: -1;
+     }
+ }
+
+ .sectionTratamiento {
+     margin-top: 12.5rem;
+     margin-bottom: 12.5rem;
+
+     h2 {
+         width: auto;
+         margin-bottom: 6.25rem;
+         color: $h2Tratamiento;
+         font-size: 40px;
+         text-decoration: none;
+         font-family: 'Montserrat', sans-serif;
+         letter-spacing: .25rem;
+         text-align: center;
+     }
+
+ }
+
+
+ .contieneTratamientos {
+     display: flex;
+     flex-direction: row;
+
+
+     .tratamientoHombre {
+         background-color: $fondoImagenTratamientoHombre;
+         @include flex1;
+
+         img {
+             margin-top: 10px;
+         }
+
+         button {
+             background-color: $botonTratamientoHombre;
+
+             a {
+                 text-decoration: none;
+                 color: $aTratamiento;
+                 font-size: 1.25rem;
+                 font-family: 'Montserrat', sans-serif;
+             }
+         }
+     }
+
+     .tratamientoMujer {
+         background-color: $fondoImagenTratamientoMujer;
+         @include flex1;
+
+         img {
+             margin-top: 10px;
+         }
+
+         button {
+             background-color: $botonTratamientoMujer;
+
+             a {
+                 text-decoration: none;
+                 color: #EDC8C8;
+                 font-size: 1.25rem;
+                 font-family: 'Montserrat', sans-serif;
+             }
+         }
+
+     }
+ }

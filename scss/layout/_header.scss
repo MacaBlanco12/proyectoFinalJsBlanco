@@ -1,0 +1,17 @@
+
+header {
+    .navbar {
+        background-color:$colorHeader;
+
+        .container-fluid {
+            a {
+                color: $rosaOscuro;
+                font-family: 'Montserrat', sans-serif;
+                &:hover{
+                    font-weight: bolder;
+                }
+            }
+        }
+
+    }
+}

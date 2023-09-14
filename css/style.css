@@ -1,0 +1,687 @@
+/*VARIABLES Y MIXINS*/
+/*COLORES*/
+/* RESET Y TIPOGRAFIAS*/
+body {
+  background-color: #f5ebf0;
+  width: 100%;
+}
+
+/*FUENTES
+font-family: 'Montserrat', sans-serif;
+font-family: "Champagne & Limousines V1";
+*/
+/*LAYOUT*/
+header .navbar {
+  background-color: #192241;
+}
+header .navbar .container-fluid a {
+  color: #EDC8C8;
+  font-family: "Montserrat", sans-serif;
+}
+header .navbar .container-fluid a:hover {
+  font-weight: bolder;
+}
+
+main .sectionLogo {
+  margin: 0;
+  width: 100%;
+  height: 28rem;
+  background-image: url(../assets/images/seccionprincipal.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionLogo div h1 {
+  text-align: center;
+  color: #192241;
+  text-decoration: none;
+  font-size: 3.75rem;
+  font-weight: bold;
+  letter-spacing: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+}
+main .sectionPromo {
+  margin-top: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .sectionPromo h2 {
+  margin-bottom: 3.125rem;
+  color: #192241;
+  font-size: 3.125rem;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+main .sectionPromo .contenedorCarrusel {
+  width: auto;
+}
+main .sectionPromo .contenedorCarrusel .carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+main .sectionTratamiento {
+  margin-top: 12.5rem;
+  margin-bottom: 12.5rem;
+}
+main .sectionTratamiento div h2 {
+  width: auto;
+  margin-bottom: 6.25rem;
+  color: #192241;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+main .sectionTratamiento .contieneTratamientos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoHombre {
+  background-color: #253779;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoHombre img {
+  margin-top: 10px;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoHombre button {
+  background-color: #EDC8C8;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+  text-decoration: none;
+  color: #192241;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoMujer {
+  background-color: #EDC8C8;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoMujer img {
+  margin-top: 10px;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoMujer button {
+  background-color: #253779;
+}
+main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+  text-decoration: none;
+  color: #EDC8C8;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .sectionFooter {
+  background-color: #192241;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .sectionFooter .sectionRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .sectionFooter .sectionRedes a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #B7ACA3;
+  font-size: 1.125rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main .contieneArticulos {
+  background-color: #192241;
+  display: grid;
+  grid-template-columns: repeat(4, 1f);
+  grid-template-rows: repeat(3, 1f);
+  grid-template-areas: "articulo1 articulo1 " "articulo2 articulo2 " "articulo3 articulo4 " "articulo3 articulo4 " "articulo5 articulo4 " "articulo5 articulo4 ";
+  row-gap: 20px;
+  column-gap: 10px;
+  margin: 10px 20px 10px 20px;
+  align-content: center;
+}
+main .contieneArticulos p {
+  font-family: "Montserrat", sans-serif;
+  color: #B7ACA3;
+  font-size: 1.125rem;
+  width: 90%;
+  font-weight: bold;
+}
+main .contieneArticulos h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #edbdbd;
+  font-size: 1.875rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+main .contieneArticulos .articulo1 {
+  background-color: #192241;
+  margin: 10px 20px 10px 20px;
+  grid-area: articulo1;
+  display: flex;
+  align-items: center;
+}
+main .contieneArticulos .articulo2 {
+  background-color: #f5ebf0;
+  grid-area: articulo2;
+  display: flex;
+  align-items: center;
+}
+main .contieneArticulos .articulo3 {
+  background-color: #192241;
+  grid-area: articulo3;
+}
+main .contieneArticulos .articulo4 {
+  background-color: #f5ebf0;
+  grid-area: articulo4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contieneArticulos .articulo5 {
+  background-color: #192241;
+  grid-area: articulo5;
+}
+main .contieneArticulos img {
+  width: 30%;
+}
+
+.sectionConsulta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.sectionConsulta h2 {
+  font-weight: bold;
+  color: #edbdbd;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.sectionConsulta .col-md-6 .form-label {
+  font-weight: bold;
+  color: #edbdbd;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.sectionConsulta #validationCustom05 {
+  height: 150px;
+  resize: vertical;
+}
+.sectionConsulta .botonContacto {
+  margin-top: 0.75rem;
+  margin-bottom: 0.625rem;
+  background-color: #edbdbd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #FBDFEB;
+  border-bottom-color: #bab5b2;
+  border-bottom: #edbdbd;
+  border-style: groove;
+}
+
+.contactos {
+  background-color: #192241;
+}
+.contactos h2 {
+  font-weight: bolder;
+  color: #edbdbd;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+.contactos .ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactos .ubicacion h3 {
+  font-weight: bolder;
+  color: #edbdbd;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+}
+.contactos .ubicacion .mapa {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.principal .inicia {
+  width: 80%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principal .inicia h1 {
+  color: #253779;
+  font-size: 2.1875rem;
+}
+.principal .inicia .formulario {
+  margin-top: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.principal .inicia .formulario .controls {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: rgb(215, 211, 211);
+  padding: 10px;
+  border: rgba(215, 211, 211, 0.614);
+}
+.principal .inicia .formulario .contieneBotones {
+  display: flex;
+  justify-content: center;
+}
+.principal .inicia .formulario .contieneBotones .confirmar {
+  margin: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  text-decoration: none;
+  background-color: #edbdbd;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+.principal .inicia .formulario .contieneBotones .confirmar a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #253779;
+  font-size: 1.5625rem;
+}
+.principal .iniciaRegistro {
+  width: 50%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principal .iniciaRegistro h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #253779;
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.principal .iniciaRegistro p {
+  text-align: center;
+  width: auto;
+  font-family: "Montserrat", sans-serif;
+  color: #192241;
+  font-size: 0.9375rem;
+  background-color: #edbdbd;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+}
+.principal .iniciaRegistro a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #253779;
+  background-color: #edbdbd;
+  font-size: 1.5625rem;
+  margin-top: 5%;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.principal {
+  margin-top: 12.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.principal h2 {
+  margin-bottom: 3.125rem;
+  color: #192241;
+  font-size: 3.125rem;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+.principal .promosIndividuales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.registrate h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #253779;
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.registrate .formularioRegistro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+.registrate .formularioRegistro .form-control {
+  width: 100%;
+  background-color: rgb(215, 211, 211);
+  padding: 10px;
+  border: rgba(215, 211, 211, 0.614);
+}
+.registrate .formularioRegistro .terminos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.registrate .formularioRegistro .contieneBotones {
+  display: flex;
+  justify-content: center;
+}
+.registrate .formularioRegistro .contieneBotones .confirmar {
+  margin: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  text-decoration: none;
+  background-color: #edbdbd;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+.registrate .formularioRegistro .contieneBotones .confirmar a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #253779;
+  font-size: 1.5625rem;
+}
+
+.presentacion h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  text-align: center;
+  font-weight: bold;
+  color: #253779;
+}
+.presentacion p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+  text-align: justify;
+  color: #192241;
+}
+
+.videoPrincipalTratamiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videoPrincipalTratamiento video {
+  margin-top: 10p;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.sectionTratamiento {
+  margin-top: 12.5rem;
+  margin-bottom: 12.5rem;
+}
+.sectionTratamiento h2 {
+  width: auto;
+  margin-bottom: 6.25rem;
+  color: #192241;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+
+.contieneTratamientos {
+  display: flex;
+  flex-direction: row;
+}
+.contieneTratamientos .tratamientoHombre {
+  background-color: #253779;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contieneTratamientos .tratamientoHombre img {
+  margin-top: 10px;
+}
+.contieneTratamientos .tratamientoHombre button {
+  background-color: #EDC8C8;
+}
+.contieneTratamientos .tratamientoHombre button a {
+  text-decoration: none;
+  color: #192241;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+.contieneTratamientos .tratamientoMujer {
+  background-color: #EDC8C8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contieneTratamientos .tratamientoMujer img {
+  margin-top: 10px;
+}
+.contieneTratamientos .tratamientoMujer button {
+  background-color: #253779;
+}
+.contieneTratamientos .tratamientoMujer button a {
+  text-decoration: none;
+  color: #EDC8C8;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sectionPrincipal {
+  position: relative;
+}
+.sectionPrincipal .contieneVideoFondo video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.sectionSecundaria h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  text-align: center;
+  font-weight: bold;
+  color: #253779;
+}
+.sectionSecundaria div ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+  text-align: justify;
+  color: #192241;
+}
+
+.mainH {
+  padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  background-image: url("../assets/images/fondoHombre.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+.mainH .informacion h2 {
+  font-family: "Champagne & Limousines V1";
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  font-weight: bolder;
+  color: #253779;
+}
+.mainH .informacion ul li {
+  font-family: "Champagne & Limousines V1";
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  font-weight: bolder;
+  color: #253779;
+}
+
+.preguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.preguntas h2 {
+  font-family: "Champagne & Limousines V1";
+  text-align: center;
+  color: #192241;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+}
+.preguntas p {
+  font-family: "Champagne & Limousines V1";
+  color: #192241;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+}
+
+.main {
+  padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  background-image: url("../assets/images/fondoMujer.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+.main .informacion h2 {
+  font-family: "Champagne & Limousines V1";
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  font-weight: bolder;
+  color: #253779;
+}
+.main .informacion ul li {
+  font-family: "Champagne & Limousines V1";
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  font-weight: bolder;
+  color: #253779;
+}
+.main .preguntas div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.main .preguntas div h2 {
+  font-family: "Champagne & Limousines V1";
+  text-align: center;
+  color: #192241;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+}
+.main .preguntas div p {
+  font-family: "Champagne & Limousines V1";
+  color: #192241;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+}
+
+/* COMPONENTES*/
+/* MEDIA QUERY*/
+/*MEDIA QUERY 375 -*/
+@media (max-width: 375px) {
+  /*BLOG*/
+  .contieneArticulos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .contieneArticulos div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contieneArticulos div h3 {
+    font-size: 1.5625rem;
+  }
+  .contieneArticulos div p {
+    font-size: 0.9375rem;
+  }
+  .contieneArticulos div img {
+    width: 40%;
+  }
+}
+@media (max-width: 425px) {
+  /*BLOG*/
+  .contieneArticulos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .contieneArticulos div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contieneArticulos div h3 {
+    font-size: 1.5625rem;
+  }
+  .contieneArticulos div p {
+    font-size: 0.9375rem;
+  }
+  .contieneArticulos div img {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .contieneArticulos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contieneArticulos div h3 {
+    font-size: 1.5625rem;
+  }
+  .contieneArticulos div p {
+    font-size: 0.9375rem;
+  }
+  .contieneArticulos div img {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

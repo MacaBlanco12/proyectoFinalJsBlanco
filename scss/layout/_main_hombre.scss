@@ -1,0 +1,55 @@
+.mainH {
+    padding: .9375rem 1.875rem .9375rem 1.875rem;
+    margin: .625rem .625rem .625rem .625rem;
+    background-image: url("../assets/images/fondoHombre.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: top;
+
+    .informacion{
+       
+        h2{
+            font-family: "Champagne & Limousines V1";
+            display: flex;
+            flex-direction: column;
+            align-items: last baseline;
+            font-weight: bolder;
+            color: #253779;
+        }
+
+        ul {
+            li {
+                font-family: "Champagne & Limousines V1";
+                display: flex;
+                flex-direction: column;
+                align-items: last baseline;
+                font-weight: bolder;
+                color: #253779;
+            }
+        }
+    }
+}
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    h2 {
+        font-family: "Champagne & Limousines V1";
+        text-align: center;
+        color: #192241;
+        font-weight: bold;
+        letter-spacing: .0625rem;
+    }
+
+    p {
+        font-family: "Champagne & Limousines V1";
+        color: #192241;
+        font-weight: bold;
+        letter-spacing: .0625rem;
+    }
+
+}
