@@ -1,21 +1,114 @@
-.principal{
+
+.promosMes{
     margin-top: 12.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    .contenedorCarrusel {
+        width: auto;
 
-    h2 {
+        .carousel-inner img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.principal {
+    max-width: 100%;
+    height: auto;
+    margin-top: 12.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .25rem;
+
+    .imagen {
+
+        max-width: 100%;
+        height: auto;
+        img{
+            width: 100%; 
+            height: auto;
+        }
+    }
+  
+   
+    h1 {
+       
         margin-bottom: 3.125rem;
-        color: $colorHeader;
+        color: #2E3976;
         font-size: 3.125rem;
         text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing: .25rem;
-        text-align: center;
+        font-weight: bolder;
+    }
+
+    h2 {
+        @extend h1;
     }
 
     .promosIndividuales {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 18.75rem;
+            background-color: #fdf4f4;
+            margin: .625rem .625rem .625rem .625rem;
+            font-family: "Champagne & Limousines V1";
+            border: none;
+            margin: .625rem .625rem .625rem .625rem;
+            padding: .625rem .625rem .625rem .625rem;
+            .contieneTitulo {
+
+                h5 {
+                    
+                    border-color: $botonTratamientoMujer;
+                    color: #cb7b7bf5;
+                    width: 100%;
+                    font-weight: bolder;
+                }
+
+            }
+        }
+
+        .listadoPrecios {
+            list-style: none;
+
+            .tachado {
+                font-size: 1.25rem;
+                color: $botonTratamientoMujer;
+            }
+
+            .precioFinal {
+                font-weight: bold;
+
+                del {
+                    font-weight: lighter;
+                    color: red;
+                }
+
+                font-size: 1.5625rem;
+                color: $botonTratamientoMujer;
+
+            }
+        }
+
+        .card-body {
+           height: 1%;
+            background-color: $botonTratamientoMujer;
+            border: radius 1.875rem;
+        
+            a {
+                font-size: 1.5625rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: $botonTratamientoHombre;
+            }
+        }
+
     }
+
 }

@@ -2,8 +2,7 @@
 /*COLORES*/
 /* RESET Y TIPOGRAFIAS*/
 body {
-  background-color: #f5ebf0;
-  width: 100%;
+  background-image: radial-gradient(circle, #f5ebf0, #f6e8ef, #f8e5ee, #f9e2ec, #fbdfeb);
 }
 
 /*FUENTES
@@ -31,7 +30,7 @@ main .sectionLogo {
   justify-content: center;
   align-items: center;
 }
-main .sectionLogo div h1 {
+main .sectionLogo div h1, main .sectionLogo div .principal h2, .principal main .sectionLogo div h2 {
   text-align: center;
   color: #192241;
   text-decoration: none;
@@ -277,7 +276,7 @@ main .contieneArticulos img {
   flex-direction: column;
   align-items: center;
 }
-.principal .inicia h1 {
+.principal .inicia h1, .principal .inicia h2 {
   color: #253779;
   font-size: 2.1875rem;
 }
@@ -354,27 +353,94 @@ main .contieneArticulos img {
   border-width: 1px;
 }
 
-.principal {
+.promosMes {
   margin-top: 12.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.principal h2 {
-  margin-bottom: 3.125rem;
-  color: #192241;
-  font-size: 3.125rem;
-  text-decoration: none;
+.promosMes .contenedorCarrusel {
+  width: auto;
+}
+.promosMes .contenedorCarrusel .carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.principal {
+  max-width: 100%;
+  height: auto;
+  margin-top: 12.5rem;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.25rem;
-  text-align: center;
+}
+.principal .imagen {
+  max-width: 100%;
+  height: auto;
+}
+.principal .imagen img {
+  width: 100%;
+  height: auto;
+}
+.principal h1, .principal h2 {
+  margin-bottom: 3.125rem;
+  color: #2E3976;
+  font-size: 3.125rem;
+  text-decoration: none;
+  font-weight: bolder;
 }
 .principal .promosIndividuales {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.principal .promosIndividuales .card {
+  display: flex;
+  flex-direction: column;
+  width: 18.75rem;
+  background-color: #fdf4f4;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  font-family: "Champagne & Limousines V1";
+  border: none;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+.principal .promosIndividuales .card .contieneTitulo h5 {
+  border-color: #253779;
+  color: rgba(203, 123, 123, 0.9607843137);
+  width: 100%;
+  font-weight: bolder;
+}
+.principal .promosIndividuales .listadoPrecios {
+  list-style: none;
+}
+.principal .promosIndividuales .listadoPrecios .tachado {
+  font-size: 1.25rem;
+  color: #253779;
+}
+.principal .promosIndividuales .listadoPrecios .precioFinal {
+  font-weight: bold;
+  font-size: 1.5625rem;
+  color: #253779;
+}
+.principal .promosIndividuales .listadoPrecios .precioFinal del {
+  font-weight: lighter;
+  color: red;
+}
+.principal .promosIndividuales .card-body {
+  height: 1%;
+  background-color: #253779;
+  border: radius 1.875rem;
+}
+.principal .promosIndividuales .card-body a {
+  font-size: 1.5625rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #EDC8C8;
+}
 
-.registrate h1 {
+.registrate h1, .registrate .principal h2, .principal .registrate h2 {
   font-family: "Montserrat", sans-serif;
   color: #253779;
   font-size: 2.1875rem;
@@ -418,7 +484,7 @@ main .contieneArticulos img {
   font-size: 1.5625rem;
 }
 
-.presentacion h1 {
+.presentacion h1, .presentacion .principal h2, .principal .presentacion h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5625rem;
   text-align: center;
@@ -513,7 +579,7 @@ main .contieneArticulos img {
   z-index: -1;
 }
 
-.sectionSecundaria h1 {
+.sectionSecundaria h1, .sectionSecundaria .principal h2, .principal .sectionSecundaria h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5625rem;
   text-align: center;
