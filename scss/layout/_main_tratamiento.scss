@@ -29,8 +29,7 @@
 
 
  .contieneTratamientos {
-     display: flex;
-     flex-direction: row;
+     @include flex5;
 
 
      .tratamientoHombre {

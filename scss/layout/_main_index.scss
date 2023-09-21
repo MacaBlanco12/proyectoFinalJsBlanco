@@ -25,9 +25,7 @@ main {
 
     .sectionPromo {
         margin-top: 12.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex1;
 
         h2 {
             margin-bottom: 3.125rem;
@@ -74,9 +72,7 @@ main {
             .tratamientoHombre {
                 background-color: $fondoImagenTratamientoHombre;
                 width: 30%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex1;
 
                 img {
                     margin-top: 10px;
@@ -97,9 +93,7 @@ main {
             .tratamientoMujer {
                 background-color: $fondoImagenTratamientoMujer;
                 width: 30%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex1;
                 img {
                     margin-top: 10px;
                 }

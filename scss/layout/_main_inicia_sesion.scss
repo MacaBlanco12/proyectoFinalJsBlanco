@@ -1,7 +1,5 @@
 .principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   @include flex1;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 

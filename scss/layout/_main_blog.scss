@@ -29,8 +29,7 @@ main {
             font-family: 'Montserrat', sans-serif;
             color: #edbdbd;
             font-size: 1.875rem;
-            display: flex;
-            justify-content: center;
+           @include flex3;
             font-weight: bolder;
         }
 
