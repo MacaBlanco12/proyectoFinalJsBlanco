@@ -1,20 +1,21 @@
-
-footer{
+footer {
     .sectionFooter {
         background-color: $colorHeader;
         @include flex5;
         justify-content: space-around;
+
         .sectionRedes {
             @include flex1;
-            a {
+            font-size: 1.125rem;
+            h5 {
                 text-decoration: none;
                 font-family: 'Montserrat', sans-serif;
                 text-decoration: none;
                 color: $beige;
-                font-size: 1.125rem;
+                
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
         }
-        
+
     }
 }

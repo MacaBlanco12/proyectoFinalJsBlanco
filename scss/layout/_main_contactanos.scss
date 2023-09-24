@@ -54,15 +54,11 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        h3{
-            font-weight: bolder;
-            color: #edbdbd;
-            font-family: 'Montserrat', sans-serif;
-            font-size: x-large;
-        }
+   
 
         .mapa {
-            width: 12.5rem;
+            margin: .9375rem 0rem 1.875rem 0rem;
+            width: 25rem;
             height: 12.5rem;
         }
 

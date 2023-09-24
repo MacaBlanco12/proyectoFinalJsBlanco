@@ -35,7 +35,7 @@
        
         margin-bottom: 3.125rem;
         color: #2E3976;
-        font-size: 3.125rem;
+        font-size: 2.5rem;
         text-decoration: none;
         font-weight: bolder;
     }
@@ -51,6 +51,8 @@
         .card {
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
             width: 18.75rem;
             background-color: #fdf4f4;
             margin: .625rem .625rem .625rem .625rem;
@@ -94,15 +96,19 @@
         }
 
         .card-body {
-            width: 300px;
-            height: 50px;
+            padding: 0;
+            width: 193px;
+            min-height: 39px;
+            max-height: 39px;
             background-color: $botonTratamientoMujer;
-            border: radius 1.875rem;
+           align-items: center;
+            
         
             a {
-                font-size: 1.5625rem;
+                font-size: 1.25rem;
                 font-weight: bold;
                 text-decoration: none;
+                text-align: center;
                 color: $botonTratamientoHombre;
             }
         }

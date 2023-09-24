@@ -1,0 +1,106 @@
+@media (max-width: 320px) {
+
+    /*INDEX */
+    .sectionLogo {
+        h1 {
+            font-size: 1.125rem;
+        }
+    }
+
+    .sectionPromo {
+        h2 {
+            font-size: 1.125rem;
+        }
+    }
+
+    .sectionTratamiento {
+        h2 {
+            font-size: 1.125rem;
+        }
+
+        .contieneTratamientos {
+            .tratamientoHombre {
+                button {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .tratamientoMujer {
+                button {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*BLOG*/
+    .contieneArticulos {
+        h3 {
+            font-size: 1.125rem;
+        }
+
+        p {
+            font-size: .875rem;
+        }
+    }
+
+    /*FOOTER*/
+    .sectionRedes {
+        h5 {
+            font-size: .875rem;
+        }
+
+    }
+
+    /*CONTACTANOS*/
+    .sectionConsulta {
+        h2 {
+            font-size: 1.125rem;
+        }
+    }
+
+    .contactos {
+        h2 {
+            font-size: 1.125rem;
+
+        }
+    }
+
+    .ubicacion {
+        h3 {
+            font-size: .875rem;
+
+        }
+    }
+
+    /*HOMBRE*/
+  .contenedor{
+   margin-left:0%;
+   display: flex;
+   justify-content: start;
+  }
+    .informacion {
+
+        h2 {
+            font-size: 1.125rem;
+        }
+
+        ul {
+            li {
+                font-size: 1rem;
+            }
+        }
+    }
+    .preguntas{
+        h2{
+            font-size: 1.125rem;
+        }
+        p{
+            font-size: 1rem; 
+        }
+    }
+}

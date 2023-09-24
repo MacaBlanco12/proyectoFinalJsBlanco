@@ -20,6 +20,9 @@ header .navbar .container-fluid a {
 header .navbar .container-fluid a:hover {
   font-weight: bolder;
 }
+header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
 
 main .sectionLogo {
   margin: 0;
@@ -34,7 +37,7 @@ main .sectionLogo div h1, main .sectionLogo div .principal h2, .principal main .
   text-align: center;
   color: #192241;
   text-decoration: none;
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.625rem;
   font-family: "Montserrat", sans-serif;
@@ -48,7 +51,7 @@ main .sectionPromo {
 main .sectionPromo h2 {
   margin-bottom: 3.125rem;
   color: #192241;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.25rem;
@@ -82,12 +85,14 @@ main .sectionTratamiento .contieneTratamientos {
 }
 main .sectionTratamiento .contieneTratamientos .tratamientoHombre {
   background-color: #253779;
-  width: 30%;
+  max-width: 30%;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 main .sectionTratamiento .contieneTratamientos .tratamientoHombre img {
+  width: 100%;
   margin-top: 10px;
 }
 main .sectionTratamiento .contieneTratamientos .tratamientoHombre button {
@@ -101,12 +106,14 @@ main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
 }
 main .sectionTratamiento .contieneTratamientos .tratamientoMujer {
   background-color: #EDC8C8;
-  width: 30%;
+  max-width: 30%;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 main .sectionTratamiento .contieneTratamientos .tratamientoMujer img {
+  width: 100%;
   margin-top: 10px;
 }
 main .sectionTratamiento .contieneTratamientos .tratamientoMujer button {
@@ -130,21 +137,21 @@ footer .sectionFooter .sectionRedes {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.125rem;
 }
-footer .sectionFooter .sectionRedes a {
+footer .sectionFooter .sectionRedes h5 {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #B7ACA3;
-  font-size: 1.125rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 main .contieneArticulos {
   background-color: #192241;
   display: grid;
-  grid-template-columns: repeat(4, 1f);
-  grid-template-rows: repeat(3, 1f);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "articulo1 articulo1 " "articulo2 articulo2 " "articulo3 articulo4 " "articulo3 articulo4 " "articulo5 articulo4 " "articulo5 articulo4 ";
   row-gap: 20px;
   column-gap: 10px;
@@ -250,14 +257,9 @@ main .contieneArticulos img {
   justify-content: space-evenly;
   align-items: center;
 }
-.contactos .ubicacion h3 {
-  font-weight: bolder;
-  color: #edbdbd;
-  font-family: "Montserrat", sans-serif;
-  font-size: x-large;
-}
 .contactos .ubicacion .mapa {
-  width: 12.5rem;
+  margin: 0.9375rem 0rem 1.875rem 0rem;
+  width: 25rem;
   height: 12.5rem;
 }
 
@@ -318,7 +320,7 @@ main .contieneArticulos img {
   font-size: 1.5625rem;
 }
 .principal .iniciaRegistro {
-  width: 50%;
+  width: 80%;
   margin-top: 3%;
   margin-bottom: 3%;
   display: flex;
@@ -386,7 +388,7 @@ main .contieneArticulos img {
 .principal h1, .principal h2 {
   margin-bottom: 3.125rem;
   color: #2E3976;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   text-decoration: none;
   font-weight: bolder;
 }
@@ -399,6 +401,8 @@ main .contieneArticulos img {
 .principal .promosIndividuales .card {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   width: 18.75rem;
   background-color: #fdf4f4;
   margin: 0.625rem 0.625rem 0.625rem 0.625rem;
@@ -430,15 +434,18 @@ main .contieneArticulos img {
   color: red;
 }
 .principal .promosIndividuales .card-body {
-  width: 300px;
-  height: 50px;
+  padding: 0;
+  width: 193px;
+  min-height: 39px;
+  max-height: 39px;
   background-color: #253779;
-  border: radius 1.875rem;
+  align-items: center;
 }
 .principal .promosIndividuales .card-body a {
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
   color: #EDC8C8;
 }
 
@@ -702,68 +709,150 @@ main .contieneArticulos img {
 }
 
 /* COMPONENTES*/
-/* MEDIA QUERY*/
-/*MEDIA QUERY 375 -*/
-@media (max-width: 375px) {
+/* MEDIA QUERY
+*/
+@media (max-width: 768px) {
+  /*INDEX */
+  .sectionLogo h1, .sectionLogo .principal h2, .principal .sectionLogo h2 {
+    font-size: 1.5rem;
+  }
+  .sectionPromo h2 {
+    font-size: 1.5rem;
+  }
+  .sectionTratamiento h2 {
+    font-size: 1.5rem;
+  }
+  .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+    font-size: 1.125rem;
+  }
+  .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+    font-size: 1.125rem;
+  }
   /*BLOG*/
-  .contieneArticulos {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  .contieneArticulos h3 {
+    font-size: 1.125rem;
   }
-  .contieneArticulos div {
-    display: flex;
-    flex-direction: column;
+  .contieneArticulos p {
+    font-size: 0.875rem;
   }
-  .contieneArticulos div h3 {
-    font-size: 1.5625rem;
+  .contieneArticulos h3 {
+    font-size: 1.5rem;
   }
-  .contieneArticulos div p {
-    font-size: 0.9375rem;
+  .contieneArticulos p {
+    font-size: 1rem;
   }
-  .contieneArticulos div img {
-    width: 40%;
+  /*FOOTER*/
+  .sectionRedes h5 {
+    font-size: 1rem;
+  }
+  /*CONTACTANOS*/
+  .sectionConsulta h2 {
+    font-size: 1.5rem;
+  }
+  .contactos h2 {
+    font-size: 1.25rem;
+  }
+  .ubicacion h3 {
+    font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
-  /*BLOG*/
-  .contieneArticulos {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  /*INDEX */
+  .sectionLogo h1, .sectionLogo .principal h2, .principal .sectionLogo h2 {
+    font-size: 1.375rem;
   }
-  .contieneArticulos div {
-    display: flex;
-    flex-direction: column;
+  .sectionPromo h2 {
+    font-size: 1.375rem;
   }
-  .contieneArticulos div h3 {
-    font-size: 1.5625rem;
+  .sectionTratamiento h2 {
+    font-size: 1.375rem;
   }
-  .contieneArticulos div p {
-    font-size: 0.9375rem;
+  .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+    font-size: 1.125rem;
   }
-  .contieneArticulos div img {
-    width: 40%;
+  .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+    font-size: 1.125rem;
   }
 }
-@media (max-width: 768px) {
-  .contieneArticulos {
-    margin: 0;
-    padding: 0;
+/*BLOG*/
+.contieneArticulos {
+  /*FOOTER*/
+  /*CONTACTANOS*/
+}
+.contieneArticulos h3 {
+  font-size: 1.375rem;
+}
+.contieneArticulos p {
+  font-size: 1rem;
+}
+.contieneArticulos .sectionRedes h5 {
+  font-size: 1rem;
+}
+.contieneArticulos .sectionConsulta h2 {
+  font-size: 1.375rem;
+}
+.contieneArticulos .contactos h2 {
+  font-size: 1.375rem;
+}
+.contieneArticulos .ubicacion h3 {
+  font-size: 1rem;
+}
+
+@media (max-width: 320px) {
+  /*INDEX */
+  .sectionLogo h1, .sectionLogo .principal h2, .principal .sectionLogo h2 {
+    font-size: 1.125rem;
+  }
+  .sectionPromo h2 {
+    font-size: 1.125rem;
+  }
+  .sectionTratamiento h2 {
+    font-size: 1.125rem;
+  }
+  .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+    font-size: 1rem;
+  }
+  .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+    font-size: 1rem;
+  }
+  /*BLOG*/
+  .contieneArticulos h3 {
+    font-size: 1.125rem;
+  }
+  .contieneArticulos p {
+    font-size: 0.875rem;
+  }
+  /*FOOTER*/
+  .sectionRedes h5 {
+    font-size: 0.875rem;
+  }
+  /*CONTACTANOS*/
+  .sectionConsulta h2 {
+    font-size: 1.125rem;
+  }
+  .contactos h2 {
+    font-size: 1.125rem;
+  }
+  .ubicacion h3 {
+    font-size: 0.875rem;
+  }
+  /*HOMBRE*/
+  .contenedor {
+    margin-left: 0%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: start;
   }
-  .contieneArticulos div h3 {
-    font-size: 1.5625rem;
+  .informacion h2 {
+    font-size: 1.125rem;
   }
-  .contieneArticulos div p {
-    font-size: 0.9375rem;
+  .informacion ul li {
+    font-size: 1rem;
   }
-  .contieneArticulos div img {
-    width: 40%;
+  .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .preguntas p {
+    font-size: 1rem;
   }
 }
 

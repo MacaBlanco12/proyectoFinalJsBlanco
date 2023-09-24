@@ -2,8 +2,8 @@ main {
     .contieneArticulos {
         background-color: #192241;
         display: grid;
-        grid-template-columns: repeat(4, 1f);
-        grid-template-rows: repeat(3, 1f);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "articulo1 articulo1 "
             "articulo2 articulo2 "

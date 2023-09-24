@@ -15,7 +15,7 @@ main {
                 text-align: center;
                 color: $colorHeader;
                 text-decoration: none;
-                font-size: 3.75rem;
+                font-size: 2.5rem;
                 font-weight: bold;
                 letter-spacing: .625rem;
                 font-family: 'Montserrat', sans-serif;
@@ -30,7 +30,7 @@ main {
         h2 {
             margin-bottom: 3.125rem;
             color: $colorHeader;
-            font-size: 3.125rem;
+            font-size: 2.5rem;
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             letter-spacing: .25rem;
@@ -71,13 +71,18 @@ main {
 
             .tratamientoHombre {
                 background-color: $fondoImagenTratamientoHombre;
-                width: 30%;
+                max-width: 30%;
+                padding: .625rem;
+               
                 @include flex1;
 
                 img {
+                    width: 100%; 
                     margin-top: 10px;
                 }
 
+            
+              
                 button {
                     background-color: $botonTratamientoHombre;
 
@@ -92,9 +97,12 @@ main {
 
             .tratamientoMujer {
                 background-color: $fondoImagenTratamientoMujer;
-                width: 30%;
+                max-width:  30%;
+                padding: .625rem;
                 @include flex1;
                 img {
+                    width: 100%; 
+
                     margin-top: 10px;
                 }
 

@@ -1,0 +1,75 @@
+@media (max-width: 425px) {
+     /*INDEX */
+    .sectionLogo {
+        h1 {
+            font-size: 1.375rem;
+        }
+    }
+
+    .sectionPromo {
+        h2 {
+            font-size: 1.375rem;
+        }
+    }
+
+    .sectionTratamiento {
+        h2 {
+            font-size: 1.375rem;
+        }
+
+        .contieneTratamientos {
+            .tratamientoHombre {
+                button {
+                    a {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+
+            .tratamientoMujer {
+                button {
+                    a {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+/*BLOG*/
+.contieneArticulos {
+    h3 {
+        font-size: 1.375rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+/*FOOTER*/
+    .sectionRedes {
+        h5 {
+            font-size: 1rem;
+        }
+
+    }
+/*CONTACTANOS*/
+.sectionConsulta{
+    h2{
+        font-size: 1.375rem;
+    }
+}
+.contactos{
+    h2{
+        font-size: 1.375rem;
+
+    }
+}    
+.ubicacion{
+    h3{
+        font-size: 1rem;
+
+    }
+}
+}
