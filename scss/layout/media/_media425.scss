@@ -1,5 +1,6 @@
 @media (max-width: 425px) {
-     /*INDEX */
+
+    /*INDEX */
     .sectionLogo {
         h1 {
             font-size: 1.375rem;
@@ -37,10 +38,12 @@
     }
 
 }
+
 /*BLOG*/
 .contieneArticulos {
     display: flex;
     flex-direction: column;
+
     h3 {
         font-size: 1.375rem;
     }
@@ -49,29 +52,65 @@
         font-size: 1rem;
     }
 
-/*FOOTER*/
+    /*FOOTER*/
     .sectionRedes {
         h5 {
             font-size: 1rem;
         }
 
     }
-/*CONTACTANOS*/
-.sectionConsulta{
-    h2{
-        font-size: 1.375rem;
-    }
-}
-.contactos{
-    h2{
-        font-size: 1.375rem;
 
+    /*CONTACTANOS*/
+    .sectionConsulta {
+        h2 {
+            font-size: 1.375rem;
+        }
     }
-}    
-.ubicacion{
-    h3{
-        font-size: 1rem;
 
+    .contactos {
+        h2 {
+            font-size: 1.375rem;
+
+        }
     }
-}
+
+    .ubicacion {
+        h3 {
+            font-size: 1rem;
+
+        }
+    }
+
+    /*HOMBRE*/
+    .mainH {
+
+        .contenedor {
+            margin-left: 0%;
+            display: flex;
+            justify-content: start;
+        }
+
+        .informacion {
+
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
 }
