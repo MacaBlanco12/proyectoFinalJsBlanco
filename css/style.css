@@ -338,7 +338,6 @@ main .contieneArticulos img {
 .principal .inicia .formulario .contieneBotones .confirmar a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  text-decoration: none;
   color: #253779;
   font-size: 1.125rem;
 }
@@ -376,6 +375,7 @@ main .contieneArticulos img {
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 5%;
 }
 
 .promosMes {
@@ -510,7 +510,6 @@ main .contieneArticulos img {
   border-radius: 0.3125rem;
 }
 .registrate .formularioRegistro .contieneBotones .confirmar a {
-  text-decoration: none;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #253779;
@@ -537,7 +536,7 @@ main .contieneArticulos img {
   align-items: center;
 }
 .videoPrincipalTratamiento video {
-  margin-top: 10p;
+  margin-top: 0.625rem;
   top: 0;
   left: 0;
   width: 50%;
@@ -764,7 +763,8 @@ main .contieneArticulos img {
   main .contieneArticulos p {
     font-size: 1rem;
   }
-  main .contieneArticulos .articulo1, main .contieneArticulos .articulo2 {
+  main .contieneArticulos .articulo1,
+  main .contieneArticulos .articulo2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -803,6 +803,7 @@ main .contieneArticulos img {
   .mainH .preguntas p {
     font-size: 1rem;
   }
+  /*MUJER*/
   .main .contenedor {
     margin-left: 0%;
   }
@@ -817,6 +818,55 @@ main .contieneArticulos img {
   }
   .main .preguntas p {
     font-size: 1rem;
+  }
+  /*INICIA SESION*/
+  main .principal .inicia .formulario {
+    width: 100%;
+  }
+  main .principal .inicia h1, main .principal .inicia h2 {
+    font-size: 1.375rem;
+  }
+  main .principal .iniciaRegistro h2 {
+    font-size: 1.375rem;
+  }
+  main .principal .iniciaRegistro p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 1.125rem;
+  }
+  main .principal .iniciaRegistro a {
+    font-size: 1rem;
+  }
+  /*REGISTRO*/
+  main .registrate h1, main .registrate .principal h2, .principal main .registrate h2 {
+    font-size: 1.125rem;
+  }
+  main .registrate .formularioRegistro .form-label {
+    font-size: 1rem;
+  }
+  main .registrate .formularioRegistro .terminos {
+    font-size: 1rem;
+  }
+  main .registrate .formularioRegistro .contieneBotones .confirmar a {
+    font-size: 1rem;
+  }
+  /*PROMOCIONES*/
+  main .promosMes {
+    margin-top: 3.125rem;
+  }
+  main .principal {
+    margin-top: 3.125rem;
+  }
+  main .principal h1, main .principal h2 {
+    font-size: 1.375rem;
+  }
+  /*TRATAMIENTO*/
+  main .sectionTratamiento {
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
+  }
+  main .sectionTratamiento h2 {
+    font-size: 1.375rem;
   }
 }
 @media (max-width: 425px) {
@@ -888,6 +938,7 @@ main .contieneArticulos img {
   .mainH .preguntas p {
     font-size: 1rem;
   }
+  /*MUJER*/
   .main .contenedor {
     margin-left: 0%;
     display: flex;
@@ -904,6 +955,74 @@ main .contieneArticulos img {
   }
   .main .preguntas p {
     font-size: 1rem;
+  }
+  /*INICIA SESION*/
+  main .principal .inicia .formulario {
+    width: 100%;
+  }
+  main .principal .inicia .formulario .contieneBotones {
+    display: flex;
+    flex-direction: column;
+  }
+  main .principal .inicia .formulario .contieneBotones .confirmar a {
+    font-size: 1rem;
+  }
+  main .principal .inicia h1, main .principal .inicia h2 {
+    font-size: 1.125rem;
+  }
+  main .iniciaRegistro h2 {
+    font-size: 1.125rem;
+  }
+  main .iniciaRegistro p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 1rem;
+  }
+  main .iniciaRegistro a {
+    font-size: 1rem;
+  }
+  /*REGISTRO*/
+  main .registrate h1, main .registrate .principal h2, .principal main .registrate h2 {
+    font-size: 1.125rem;
+  }
+  main .registrate .formularioRegistro .form-label {
+    font-size: 1rem;
+  }
+  main .registrate .formularioRegistro .terminos {
+    font-size: 1rem;
+  }
+  main .registrate .formularioRegistro .contieneBotones {
+    display: flex;
+    flex-direction: column;
+  }
+  main .registrate .formularioRegistro .contieneBotones .confirmar a {
+    font-size: 1rem;
+  }
+  /*PROMOCIONES*/
+  main .promosMes {
+    margin-top: 3.125rem;
+  }
+  main .principal {
+    margin-top: 3.125rem;
+  }
+  main .principal h1, main .principal h2 {
+    font-size: 1.375rem;
+  }
+  main .principal .promosIndividuales .card .contieneTitulo h5 {
+    font-size: 1.125rem;
+  }
+  main .principal .promosIndividuales .card .listadoPrecios .tachado {
+    font-size: 1.125rem;
+  }
+  main .principal .promosIndividuales .card .listadoPrecios .precioFinal {
+    font-size: 1.25rem;
+  }
+  main .principal .promosIndividuales .card .card-body a {
+    font-size: 1rem;
+  }
+  /*TECNOLOGIA*/
+  main .sectionSecundaria h1, main .sectionSecundaria .principal h2, .principal main .sectionSecundaria h2 {
+    font-size: 1.125rem;
   }
 }
 @media (max-width: 320px) {
@@ -998,6 +1117,89 @@ main .contieneArticulos img {
   }
   .main .preguntas p {
     font-size: 1rem;
+  }
+  /*INICIA SESION*/
+  main .principal .formulario {
+    width: 100%;
+  }
+  main .principal .formulario .contieneBotones {
+    display: flex;
+    flex-direction: column;
+  }
+  main .principal .formulario .contieneBotones .confirmar a {
+    font-size: 1rem;
+  }
+  main .principal .inicia h1, main .principal .inicia h2 {
+    font-size: 1.125rem;
+  }
+  main .principal .iniciaRegistro h2 {
+    font-size: 1.125rem;
+  }
+  main .principal .iniciaRegistro p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 1rem;
+  }
+  main .principal .iniciaRegistro a {
+    font-size: 1rem;
+    text-align: start;
+  }
+  /*REGISTRO*/
+  main .registrate h1, main .registrate .principal h2, .principal main .registrate h2 {
+    font-size: 1.125rem;
+  }
+  main .registrate .formularioRegistro .form-label {
+    font-size: 1rem;
+  }
+  main .registrate .formularioRegistro .terminos {
+    font-size: 1rem;
+  }
+  main .registrate .formularioRegistro .contieneBotones {
+    display: flex;
+    flex-direction: column;
+  }
+  main .registrate .formularioRegistro .contieneBotones .confirmar a {
+    font-size: 1rem;
+  }
+  /*PROMOCIONES*/
+  main .promosMes {
+    margin-top: 3.125rem;
+  }
+  main .principal {
+    margin-top: 3.125rem;
+  }
+  main .principal h1, main .principal h2 {
+    font-size: 1.375rem;
+  }
+  main .principal .promosIndividuales .card .contieneTitulo h5 {
+    font-size: 1.125rem;
+  }
+  main .principal .promosIndividuales .card .listadoPrecios .tachado {
+    font-size: 1.125rem;
+  }
+  main .principal .promosIndividuales .card .listadoPrecios .precioFinal {
+    font-size: 1.25rem;
+  }
+  main .principal .promosIndividuales .card .card-body a {
+    font-size: 1rem;
+  }
+  /*TRATAMIENTO*/
+  main .sectionTratamiento {
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
+  }
+  main .sectionTratamiento h2 {
+    font-size: 1.125rem;
+  }
+  main .sectionTratamiento .contieneTratamientos .tratamientoHombre a {
+    font-size: 1rem;
+  }
+  main .sectionTratamiento .contieneTratamientos .tratamientoMujer a {
+    font-size: 1rem;
+  }
+  /*TECNOLOGIA*/
+  main .sectionSecundaria h1, main .sectionSecundaria .principal h2, .principal main .sectionSecundaria h2 {
+    font-size: 1.125rem;
   }
 }
 

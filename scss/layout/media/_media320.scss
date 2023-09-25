@@ -172,4 +172,153 @@
             }
         }
     }
+
+    /*INICIA SESION*/
+    main {
+        .principal {
+            .formulario {
+                width: 100%;
+
+                .contieneBotones {
+                    display: flex;
+                    flex-direction: column;
+
+                    .confirmar {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+            }
+
+            .inicia {
+                h1 {
+                    font-size: 1.125rem;
+                }
+            }
+
+
+            .iniciaRegistro {
+                h2 {
+                    font-size: 1.125rem;
+                }
+
+                p {
+                    margin: 0%;
+                    padding: 0%;
+                    font-size: 1rem;
+
+                }
+
+                a {
+                    font-size: 1rem;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    /*REGISTRO*/
+    main {
+        .registrate {
+            h1 {
+                font-size: 1.125rem;
+            }
+
+            .formularioRegistro {
+                .form-label {
+                    font-size: 1rem;
+                }
+
+                .terminos {
+                    font-size: 1rem;
+                }
+
+                .contieneBotones {
+                    display: flex;
+                    flex-direction: column;
+
+                    .confirmar {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    /*PROMOCIONES*/
+    main {
+        .promosMes{
+            margin-top: 3.125rem;
+        }
+        .principal {
+            margin-top: 3.125rem;
+            h1 {
+                font-size: 1.375rem;
+            }
+
+            .promosIndividuales {
+                .card {
+                    .contieneTitulo {
+                        h5 {
+                            font-size: 1.125rem;
+                        }
+                    }
+
+                    .listadoPrecios {
+                        .tachado {
+                            font-size: 1.125rem;
+                        }
+
+                        .precioFinal {
+                            font-size: 1.25rem;
+                        }
+                    }
+
+                    .card-body {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     /*TRATAMIENTO*/
+     main {
+        .sectionTratamiento {
+            margin-top: 3.125rem;
+            margin-bottom: 1.25rem;
+
+            h2 {
+                font-size: 1.125rem;
+
+            }
+            .contieneTratamientos{
+                .tratamientoHombre{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+                .tratamientoMujer{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+     /*TECNOLOGIA*/
+     main {
+        .sectionSecundaria {
+            h1 {
+                font-size: 1.125rem;
+            }
+        }
+    } 
 }

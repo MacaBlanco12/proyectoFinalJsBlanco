@@ -44,7 +44,6 @@
                     a {
                         text-decoration: none;
                         font-family: 'Montserrat', sans-serif;
-                        text-decoration: none;
                         color: $aBotonInicia;
                         font-size: 1.125rem;
                     }
@@ -90,6 +89,7 @@
             border-color: black;
             border-style: solid;
             border-width: 1px;
+            border-radius: 5%;
         }
     }
 }
