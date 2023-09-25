@@ -78,29 +78,35 @@
     }
 
     /*HOMBRE*/
-  .contenedor{
-   margin-left:0%;
-   display: flex;
-   justify-content: start;
-  }
-    .informacion {
+    .mainH {
 
-        h2 {
-            font-size: 1.125rem;
+        .contenedor {
+            margin-left: 0%;
+            display: flex;
+            justify-content: start;
         }
 
-        ul {
-            li {
-                font-size: 1rem;
+        .informacion {
+
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1rem;
+                }
             }
         }
-    }
-    .preguntas{
-        h2{
-            font-size: 1.125rem;
-        }
-        p{
-            font-size: 1rem; 
+
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     }
 }

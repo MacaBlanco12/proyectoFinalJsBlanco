@@ -1,16 +1,17 @@
 main {
     .contieneArticulos {
+        padding: .625rem .625rem .625rem .625rem;
+
         background-color: #192241;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "articulo1 articulo1 "
             "articulo2 articulo2 "
             "articulo3 articulo4 "
             "articulo3 articulo4 "
-            "articulo5 articulo4 "
-            "articulo5 articulo4 ";
+            "articulo5 articulo5 ";
+        grid-template-columns: 4fr,4fr,4fr,1fr;
+        
         row-gap: 20px;
         column-gap: 10px;
         margin: 10px 20px 10px 20px;
@@ -47,8 +48,9 @@ main {
         }
 
         .articulo3 {
+           
             background-color: #192241;
-            grid-area: articulo3;
+            grid-area: articulo5;
         }
 
         .articulo4 {
@@ -58,12 +60,20 @@ main {
         }
 
         .articulo5 {
+
             background-color: #192241;
-            grid-area: articulo5;
+            grid-area: articulo3;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 70%;
+            }
         }
 
         img {
-            width: 30%;
+            width: 50%;
         }
 
     }

@@ -39,6 +39,8 @@
 }
 /*BLOG*/
 .contieneArticulos {
+    display: flex;
+    flex-direction: column;
     h3 {
         font-size: 1.375rem;
     }

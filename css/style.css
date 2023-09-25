@@ -24,6 +24,9 @@ header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
   color: white;
 }
 
+main {
+  /*ANIMACION EN TITULO DE PROMOCIONES*/
+}
 main .sectionLogo {
   margin: 0;
   width: 100%;
@@ -59,6 +62,7 @@ main .sectionPromo h2 {
 }
 main .sectionPromo .contenedorCarrusel {
   width: auto;
+  box-shadow: 0px 0px 30px #EDC8C8; /* Efecto de luz */
 }
 main .sectionPromo .contenedorCarrusel .carousel-inner img {
   max-width: 100%;
@@ -125,6 +129,17 @@ main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
   font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
 }
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main h1, main .principal h2, .principal main h2 {
+  animation: aparecer 2s ease-in-out;
+}
 
 footer .sectionFooter {
   background-color: #192241;
@@ -148,11 +163,11 @@ footer .sectionFooter .sectionRedes h5 {
 }
 
 main .contieneArticulos {
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
   background-color: #192241;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "articulo1 articulo1 " "articulo2 articulo2 " "articulo3 articulo4 " "articulo3 articulo4 " "articulo5 articulo4 " "articulo5 articulo4 ";
+  grid-template-areas: "articulo1 articulo1 " "articulo2 articulo2 " "articulo3 articulo4 " "articulo3 articulo4 " "articulo5 articulo5 ";
+  grid-template-columns: 4fr, 4fr, 4fr, 1fr;
   row-gap: 20px;
   column-gap: 10px;
   margin: 10px 20px 10px 20px;
@@ -188,7 +203,7 @@ main .contieneArticulos .articulo2 {
 }
 main .contieneArticulos .articulo3 {
   background-color: #192241;
-  grid-area: articulo3;
+  grid-area: articulo5;
 }
 main .contieneArticulos .articulo4 {
   background-color: #f5ebf0;
@@ -199,10 +214,17 @@ main .contieneArticulos .articulo4 {
 }
 main .contieneArticulos .articulo5 {
   background-color: #192241;
-  grid-area: articulo5;
+  grid-area: articulo3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contieneArticulos .articulo5 img {
+  width: 70%;
 }
 main .contieneArticulos img {
-  width: 30%;
+  width: 50%;
 }
 
 .sectionConsulta {
@@ -311,13 +333,14 @@ main .contieneArticulos img {
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 5%;
 }
 .principal .inicia .formulario .contieneBotones .confirmar a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #253779;
-  font-size: 1.5625rem;
+  font-size: 1.125rem;
 }
 .principal .iniciaRegistro {
   width: 80%;
@@ -388,7 +411,7 @@ main .contieneArticulos img {
 .principal h1, .principal h2 {
   margin-bottom: 3.125rem;
   color: #2E3976;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   text-decoration: none;
   font-weight: bolder;
 }
@@ -484,13 +507,14 @@ main .contieneArticulos img {
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 0.3125rem;
 }
 .registrate .formularioRegistro .contieneBotones .confirmar a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #253779;
-  font-size: 1.5625rem;
+  font-size: 1.125rem;
 }
 
 .presentacion h1, .presentacion .principal h2, .principal .presentacion h2 {
@@ -729,17 +753,15 @@ main .contieneArticulos img {
     font-size: 1.125rem;
   }
   /*BLOG*/
+  .contieneArticulos {
+    display: flex;
+    flex-direction: column;
+  }
   .contieneArticulos h3 {
     font-size: 1.125rem;
   }
   .contieneArticulos p {
     font-size: 0.875rem;
-  }
-  .contieneArticulos h3 {
-    font-size: 1.5rem;
-  }
-  .contieneArticulos p {
-    font-size: 1rem;
   }
   /*FOOTER*/
   .sectionRedes h5 {
@@ -776,6 +798,8 @@ main .contieneArticulos img {
 }
 /*BLOG*/
 .contieneArticulos {
+  display: flex;
+  flex-direction: column;
   /*FOOTER*/
   /*CONTACTANOS*/
 }
@@ -837,21 +861,21 @@ main .contieneArticulos img {
     font-size: 0.875rem;
   }
   /*HOMBRE*/
-  .contenedor {
+  .mainH .contenedor {
     margin-left: 0%;
     display: flex;
     justify-content: start;
   }
-  .informacion h2 {
+  .mainH .informacion h2 {
     font-size: 1.125rem;
   }
-  .informacion ul li {
+  .mainH .informacion ul li {
     font-size: 1rem;
   }
-  .preguntas h2 {
+  .mainH .preguntas h2 {
     font-size: 1.125rem;
   }
-  .preguntas p {
+  .mainH .preguntas p {
     font-size: 1rem;
   }
 }
