@@ -737,19 +737,19 @@ main .contieneArticulos img {
 */
 @media (max-width: 768px) {
   /*INDEX */
-  .sectionLogo h1, .sectionLogo .principal h2, .principal .sectionLogo h2 {
+  .main .sectionLogo h1, .main .sectionLogo .principal h2, .principal .main .sectionLogo h2 {
     font-size: 1.5rem;
   }
-  .sectionPromo h2 {
+  .main .sectionPromo h2 {
     font-size: 1.5rem;
   }
-  .sectionTratamiento h2 {
+  .main .sectionTratamiento h2 {
     font-size: 1.5rem;
   }
-  .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+  .main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
     font-size: 1.125rem;
   }
-  .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+  .main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
     font-size: 1.125rem;
   }
   /*BLOG*/
@@ -780,66 +780,65 @@ main .contieneArticulos img {
 }
 @media (max-width: 425px) {
   /*INDEX */
-  .sectionLogo h1, .sectionLogo .principal h2, .principal .sectionLogo h2 {
+  .main .sectionLogo h1, .main .sectionLogo .principal h2, .principal .main .sectionLogo h2 {
     font-size: 1.375rem;
   }
-  .sectionPromo h2 {
+  .main .sectionPromo h2 {
     font-size: 1.375rem;
   }
-  .sectionTratamiento h2 {
+  .main .sectionTratamiento h2 {
     font-size: 1.375rem;
   }
-  .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+  .main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
     font-size: 1.125rem;
   }
-  .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+  .main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
     font-size: 1.125rem;
   }
+  /*BLOG*/
+  .contieneArticulos {
+    display: flex;
+    flex-direction: column;
+    /*FOOTER*/
+    /*CONTACTANOS*/
+    /*HOMBRE*/
+  }
+  .contieneArticulos h3 {
+    font-size: 1.375rem;
+  }
+  .contieneArticulos p {
+    font-size: 1rem;
+  }
+  .contieneArticulos .sectionRedes h5 {
+    font-size: 1rem;
+  }
+  .contieneArticulos .sectionConsulta h2 {
+    font-size: 1.375rem;
+  }
+  .contieneArticulos .contactos h2 {
+    font-size: 1.375rem;
+  }
+  .contieneArticulos .ubicacion h3 {
+    font-size: 1rem;
+  }
+  .contieneArticulos .mainH .contenedor {
+    margin-left: 0%;
+    display: flex;
+    justify-content: start;
+  }
+  .contieneArticulos .mainH .informacion h2 {
+    font-size: 1.125rem;
+  }
+  .contieneArticulos .mainH .informacion ul li {
+    font-size: 1rem;
+  }
+  .contieneArticulos .mainH .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .contieneArticulos .mainH .preguntas p {
+    font-size: 1rem;
+  }
 }
-/*BLOG*/
-.contieneArticulos {
-  display: flex;
-  flex-direction: column;
-  /*FOOTER*/
-  /*CONTACTANOS*/
-  /*HOMBRE*/
-}
-.contieneArticulos h3 {
-  font-size: 1.375rem;
-}
-.contieneArticulos p {
-  font-size: 1rem;
-}
-.contieneArticulos .sectionRedes h5 {
-  font-size: 1rem;
-}
-.contieneArticulos .sectionConsulta h2 {
-  font-size: 1.375rem;
-}
-.contieneArticulos .contactos h2 {
-  font-size: 1.375rem;
-}
-.contieneArticulos .ubicacion h3 {
-  font-size: 1rem;
-}
-.contieneArticulos .mainH .contenedor {
-  margin-left: 0%;
-  display: flex;
-  justify-content: start;
-}
-.contieneArticulos .mainH .informacion h2 {
-  font-size: 1.125rem;
-}
-.contieneArticulos .mainH .informacion ul li {
-  font-size: 1rem;
-}
-.contieneArticulos .mainH .preguntas h2 {
-  font-size: 1.125rem;
-}
-.contieneArticulos .mainH .preguntas p {
-  font-size: 1rem;
-}
-
 @media (max-width: 320px) {
   /*INDEX */
   .main .sectionLogo div h1, .main .sectionLogo div .principal h2, .principal .main .sectionLogo div h2 {
