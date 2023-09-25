@@ -1,10 +1,10 @@
 @media (max-width: 425px) {
 
     /*INDEX */
-    .main {
+    main {
         .sectionLogo {
             h1 {
-                font-size: 1.375rem;
+                font-size: 1.5625rem;
             }
         }
 
@@ -37,61 +37,110 @@
                 }
             }
         }
-
     }
 
 
 
+
+
+
     /*BLOG*/
-    .contieneArticulos {
-        display: flex;
-        flex-direction: column;
+    main {
+        .contieneArticulos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        h3 {
-            font-size: 1.375rem;
+            h3 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: .875rem;
+            }
+
+            .articulo1,
+            .articulo2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
+    }
 
-        p {
+
+    /*FOOTER*/
+    .sectionRedes {
+        h5 {
             font-size: 1rem;
         }
 
-        /*FOOTER*/
-        .sectionRedes {
-            h5 {
-                font-size: 1rem;
-            }
+    }
 
-        }
-
-        /*CONTACTANOS*/
+    /*CONTACTANOS*/
+    main {
         .sectionConsulta {
             h2 {
-                font-size: 1.375rem;
+                font-size: 1.125rem;
             }
         }
 
         .contactos {
             h2 {
-                font-size: 1.375rem;
+                font-size: 1.125rem;
 
+            }
+
+            .ubicacion {
+                .mapa {
+                    margin: 0%;
+                    width: 12.5rem;
+                    height: 6.25rem;
+                }
+            }
+        }
+    }
+
+    /*HOMBRE*/
+    .mainH {
+
+        .contenedor {
+            margin-left: 0%;
+            display: flex;
+            justify-content: start;
+        }
+
+        .informacion {
+
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1rem;
+                }
             }
         }
 
-        .ubicacion {
-            h3 {
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
                 font-size: 1rem;
-
             }
         }
+    }
 
-        /*HOMBRE*/
-        .mainH {
+    .main {
 
-            .contenedor {
-                margin-left: 0%;
-                display: flex;
-                justify-content: start;
-            }
+
+        .contenedor {
+            margin-left: 0%;
+            display: flex;
+            justify-content: start;
 
             .informacion {
 
@@ -105,15 +154,15 @@
                     }
                 }
             }
+        }
 
-            .preguntas {
-                h2 {
-                    font-size: 1.125rem;
-                }
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
 
-                p {
-                    font-size: 1rem;
-                }
+            p {
+                font-size: 1rem;
             }
         }
     }

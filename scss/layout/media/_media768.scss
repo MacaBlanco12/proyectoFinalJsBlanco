@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
 
     /*INDEX */
-    .main {
+    main {
         .sectionLogo {
             h1 {
                 font-size: 1.5rem;
@@ -40,17 +40,26 @@
 
     }
 
+
+
     /*BLOG*/
-    .contieneArticulos {
-        display: flex;
-        flex-direction: column;
+    main {
+        .contieneArticulos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                font-size: 1.375rem;
+            }
 
-        h3 {
-            font-size: 1.125rem;
-        }
-
-        p {
-            font-size: .875rem;
+            p {
+                font-size: 1rem;
+            }
+            .articulo1, .articulo2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 
@@ -64,23 +73,89 @@
     }
 
     /*CONTACTANOS*/
-    .sectionConsulta {
-        h2 {
-            font-size: 1.5rem;
+    main {
+        .sectionConsulta {
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .contactos {
+            h2 {
+                font-size: 1.25rem;
+
+            }
+
+            .ubicacion {
+                .mapa {
+                    margin: 0%;
+                    width: 18.75rem;
+                    height: 9.375rem;
+                }
+            }
         }
     }
+    /*HOMBRES*/
+    .mainH {
 
-    .contactos {
-        h2 {
-            font-size: 1.25rem;
+        .contenedor {
+            margin-left: 0%;
+            display: flex;
+            flex-direction: column;
+        }
 
+        .informacion {
+        
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     }
+    .main {
+       
 
-    .ubicacion {
-        h3 {
-            font-size: 1rem;
+        .contenedor {
+            margin-left: 0%;
+            
 
+            .informacion {
+
+                h2 {
+                    font-size: 1.125rem;
+                }
+
+                ul {
+                    li {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     }
 }

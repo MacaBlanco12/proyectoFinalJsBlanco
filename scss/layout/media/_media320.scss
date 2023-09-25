@@ -1,11 +1,11 @@
 @media (max-width: 320px) {
 
     /*INDEX */
-    .main {
+    main {
         .sectionLogo {
             div {
                 h1 {
-                    font-size: 1.125rem;
+                    font-size: 1.375rem;
                 }
             }
 
@@ -46,16 +46,32 @@
     }
 
 
-    /*BLOG*/
-    .contieneArticulos {
-        h3 {
-            font-size: 1.125rem;
-        }
 
-        p {
-            font-size: .875rem;
+
+    /*BLOG*/
+    main {
+        .contieneArticulos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: .875rem;
+            }
+
+            .articulo1,
+            .articulo2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
+
 
     /*FOOTER*/
     .sectionRedes {
@@ -66,28 +82,32 @@
     }
 
     /*CONTACTANOS*/
-    .sectionConsulta {
-        h2 {
-            font-size: 1.125rem;
+    main {
+        .sectionConsulta {
+            h2 {
+                font-size: 1.125rem;
+            }
         }
-    }
 
-    .contactos {
-        h2 {
-            font-size: 1.125rem;
+        .contactos {
+            h2 {
+                font-size: 1.125rem;
 
-        }
-    }
+            }
 
-    .ubicacion {
-        h3 {
-            font-size: .875rem;
-
+            .ubicacion {
+                .mapa {
+                    margin: 0%;
+                    width: 12.5rem;
+                    height: 6.25rem;
+                }
+            }
         }
     }
 
     /*HOMBRE*/
     .mainH {
+        background-size: contain;
 
         .contenedor {
             margin-left: 0%;
@@ -104,6 +124,40 @@
             ul {
                 li {
                     font-size: 1rem;
+                }
+            }
+        }
+
+        .preguntas {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /*MUJER*/
+    .main {
+        background-size: contain;
+
+        .contenedor {
+            margin-left: 0%;
+            display: flex;
+            justify-content: start;
+
+            .informacion {
+
+                h2 {
+                    font-size: 1.125rem;
+                }
+
+                ul {
+                    li {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

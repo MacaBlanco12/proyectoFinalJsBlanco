@@ -737,145 +737,138 @@ main .contieneArticulos img {
 */
 @media (max-width: 768px) {
   /*INDEX */
-  .main .sectionLogo h1, .main .sectionLogo .principal h2, .principal .main .sectionLogo h2 {
+  main .sectionLogo h1, main .sectionLogo .principal h2, .principal main .sectionLogo h2 {
     font-size: 1.5rem;
   }
-  .main .sectionPromo h2 {
+  main .sectionPromo h2 {
     font-size: 1.5rem;
   }
-  .main .sectionTratamiento h2 {
+  main .sectionTratamiento h2 {
     font-size: 1.5rem;
   }
-  .main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+  main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
     font-size: 1.125rem;
   }
-  .main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+  main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
     font-size: 1.125rem;
   }
   /*BLOG*/
-  .contieneArticulos {
+  main .contieneArticulos {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  .contieneArticulos h3 {
-    font-size: 1.125rem;
+  main .contieneArticulos h3 {
+    font-size: 1.375rem;
   }
-  .contieneArticulos p {
-    font-size: 0.875rem;
+  main .contieneArticulos p {
+    font-size: 1rem;
+  }
+  main .contieneArticulos .articulo1, main .contieneArticulos .articulo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   /*FOOTER*/
   .sectionRedes h5 {
     font-size: 1rem;
   }
   /*CONTACTANOS*/
-  .sectionConsulta h2 {
+  main .sectionConsulta h2 {
     font-size: 1.5rem;
   }
-  .contactos h2 {
+  main .contactos h2 {
     font-size: 1.25rem;
   }
-  .ubicacion h3 {
+  main .contactos .ubicacion .mapa {
+    margin: 0%;
+    width: 18.75rem;
+    height: 9.375rem;
+  }
+  /*HOMBRES*/
+  .mainH .contenedor {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainH .informacion h2 {
+    font-size: 1.125rem;
+  }
+  .mainH .informacion ul li {
+    font-size: 1rem;
+  }
+  .mainH .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .mainH .preguntas p {
+    font-size: 1rem;
+  }
+  .main .contenedor {
+    margin-left: 0%;
+  }
+  .main .contenedor .informacion h2 {
+    font-size: 1.125rem;
+  }
+  .main .contenedor .informacion ul li {
+    font-size: 1rem;
+  }
+  .main .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .main .preguntas p {
     font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
   /*INDEX */
-  .main .sectionLogo h1, .main .sectionLogo .principal h2, .principal .main .sectionLogo h2 {
+  main .sectionLogo h1, main .sectionLogo .principal h2, .principal main .sectionLogo h2 {
+    font-size: 1.5625rem;
+  }
+  main .sectionPromo h2 {
     font-size: 1.375rem;
   }
-  .main .sectionPromo h2 {
+  main .sectionTratamiento h2 {
     font-size: 1.375rem;
   }
-  .main .sectionTratamiento h2 {
-    font-size: 1.375rem;
-  }
-  .main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+  main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
     font-size: 1.125rem;
   }
-  .main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+  main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
     font-size: 1.125rem;
   }
   /*BLOG*/
-  .contieneArticulos {
+  main .contieneArticulos {
     display: flex;
     flex-direction: column;
-    /*FOOTER*/
-    /*CONTACTANOS*/
-    /*HOMBRE*/
+    align-items: center;
   }
-  .contieneArticulos h3 {
-    font-size: 1.375rem;
-  }
-  .contieneArticulos p {
-    font-size: 1rem;
-  }
-  .contieneArticulos .sectionRedes h5 {
-    font-size: 1rem;
-  }
-  .contieneArticulos .sectionConsulta h2 {
-    font-size: 1.375rem;
-  }
-  .contieneArticulos .contactos h2 {
-    font-size: 1.375rem;
-  }
-  .contieneArticulos .ubicacion h3 {
-    font-size: 1rem;
-  }
-  .contieneArticulos .mainH .contenedor {
-    margin-left: 0%;
-    display: flex;
-    justify-content: start;
-  }
-  .contieneArticulos .mainH .informacion h2 {
+  main .contieneArticulos h3 {
     font-size: 1.125rem;
   }
-  .contieneArticulos .mainH .informacion ul li {
-    font-size: 1rem;
-  }
-  .contieneArticulos .mainH .preguntas h2 {
-    font-size: 1.125rem;
-  }
-  .contieneArticulos .mainH .preguntas p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 320px) {
-  /*INDEX */
-  .main .sectionLogo div h1, .main .sectionLogo div .principal h2, .principal .main .sectionLogo div h2 {
-    font-size: 1.125rem;
-  }
-  .main .sectionPromo h2 {
-    font-size: 1.125rem;
-  }
-  .main .sectionTratamiento div h2 {
-    font-size: 1.125rem;
-  }
-  .main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
-    font-size: 1rem;
-  }
-  .main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
-    font-size: 1rem;
-  }
-  /*BLOG*/
-  .contieneArticulos h3 {
-    font-size: 1.125rem;
-  }
-  .contieneArticulos p {
+  main .contieneArticulos p {
     font-size: 0.875rem;
+  }
+  main .contieneArticulos .articulo1,
+  main .contieneArticulos .articulo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   /*FOOTER*/
   .sectionRedes h5 {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   /*CONTACTANOS*/
-  .sectionConsulta h2 {
+  main .sectionConsulta h2 {
     font-size: 1.125rem;
   }
-  .contactos h2 {
+  main .contactos h2 {
     font-size: 1.125rem;
   }
-  .ubicacion h3 {
-    font-size: 0.875rem;
+  main .contactos .ubicacion .mapa {
+    margin: 0%;
+    width: 12.5rem;
+    height: 6.25rem;
   }
   /*HOMBRE*/
   .mainH .contenedor {
@@ -893,6 +886,117 @@ main .contieneArticulos img {
     font-size: 1.125rem;
   }
   .mainH .preguntas p {
+    font-size: 1rem;
+  }
+  .main .contenedor {
+    margin-left: 0%;
+    display: flex;
+    justify-content: start;
+  }
+  .main .contenedor .informacion h2 {
+    font-size: 1.125rem;
+  }
+  .main .contenedor .informacion ul li {
+    font-size: 1rem;
+  }
+  .main .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .main .preguntas p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  /*INDEX */
+  main .sectionLogo div h1, main .sectionLogo div .principal h2, .principal main .sectionLogo div h2 {
+    font-size: 1.375rem;
+  }
+  main .sectionPromo h2 {
+    font-size: 1.125rem;
+  }
+  main .sectionTratamiento div h2 {
+    font-size: 1.125rem;
+  }
+  main .sectionTratamiento .contieneTratamientos .tratamientoHombre button a {
+    font-size: 1rem;
+  }
+  main .sectionTratamiento .contieneTratamientos .tratamientoMujer button a {
+    font-size: 1rem;
+  }
+  /*BLOG*/
+  main .contieneArticulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .contieneArticulos h3 {
+    font-size: 1.125rem;
+  }
+  main .contieneArticulos p {
+    font-size: 0.875rem;
+  }
+  main .contieneArticulos .articulo1,
+  main .contieneArticulos .articulo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*FOOTER*/
+  .sectionRedes h5 {
+    font-size: 0.875rem;
+  }
+  /*CONTACTANOS*/
+  main .sectionConsulta h2 {
+    font-size: 1.125rem;
+  }
+  main .contactos h2 {
+    font-size: 1.125rem;
+  }
+  main .contactos .ubicacion .mapa {
+    margin: 0%;
+    width: 12.5rem;
+    height: 6.25rem;
+  }
+  /*HOMBRE*/
+  .mainH {
+    background-size: contain;
+  }
+  .mainH .contenedor {
+    margin-left: 0%;
+    display: flex;
+    justify-content: start;
+  }
+  .mainH .informacion h2 {
+    font-size: 1.125rem;
+  }
+  .mainH .informacion ul li {
+    font-size: 1rem;
+  }
+  .mainH .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .mainH .preguntas p {
+    font-size: 1rem;
+  }
+  /*MUJER*/
+  .main {
+    background-size: contain;
+  }
+  .main .contenedor {
+    margin-left: 0%;
+    display: flex;
+    justify-content: start;
+  }
+  .main .contenedor .informacion h2 {
+    font-size: 1.125rem;
+  }
+  .main .contenedor .informacion ul li {
+    font-size: 1rem;
+  }
+  .main .preguntas h2 {
+    font-size: 1.125rem;
+  }
+  .main .preguntas p {
     font-size: 1rem;
   }
 }
