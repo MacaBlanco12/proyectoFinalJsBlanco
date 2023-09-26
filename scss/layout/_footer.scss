@@ -2,7 +2,7 @@ footer {
     .sectionFooter {
         background-color: $colorHeader;
         @include flex5;
-        justify-content: space-around;
+        justify-content: space-between;
 
         .sectionRedes {
             @include flex1;
