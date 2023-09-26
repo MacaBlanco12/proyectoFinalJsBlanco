@@ -39,7 +39,7 @@ main {
 
         .contenedorCarrusel {
             width: auto;
-            box-shadow: 0px 0px 30px $fondoImagenTratamientoMujer; /* Efecto de luz */
+            box-shadow: 0px 0px 30px $fondoImagenTratamientoMujer; 
             .carousel-inner img {
                 max-width: 100%;
                 height: auto;

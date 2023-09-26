@@ -62,7 +62,7 @@ main .sectionPromo h2 {
 }
 main .sectionPromo .contenedorCarrusel {
   width: auto;
-  box-shadow: 0px 0px 30px #EDC8C8; /* Efecto de luz */
+  box-shadow: 0px 0px 30px #EDC8C8;
 }
 main .sectionPromo .contenedorCarrusel .carousel-inner img {
   max-width: 100%;
@@ -146,7 +146,7 @@ footer .sectionFooter {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 footer .sectionFooter .sectionRedes {
   display: flex;
@@ -1032,6 +1032,14 @@ main .contieneArticulos img {
   }
   main .sectionPromo h2 {
     font-size: 1.125rem;
+  }
+  main .sectionPromo .contenedorCarrusel {
+    width: auto;
+    box-shadow: 0px 0px 30px #EDC8C8;
+  }
+  main .sectionPromo .contenedorCarrusel .carousel-inner img {
+    max-width: 100%;
+    height: auto;
   }
   main .sectionTratamiento div h2 {
     font-size: 1.125rem;
