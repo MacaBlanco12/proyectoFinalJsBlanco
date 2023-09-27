@@ -393,6 +393,8 @@ main .contieneArticulos img {
 }
 
 .principal {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
   max-width: 100%;
   height: auto;
   margin-top: 12.5rem;
@@ -546,6 +548,8 @@ main .contieneArticulos img {
 .sectionTratamiento {
   margin-top: 12.5rem;
   margin-bottom: 12.5rem;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
 }
 .sectionTratamiento h2 {
   width: auto;
@@ -619,10 +623,12 @@ main .contieneArticulos img {
   font-weight: bold;
   color: #253779;
 }
+.sectionSecundaria div {
+  margin: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+}
 .sectionSecundaria div ul li {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9375rem;
-  text-align: justify;
   color: #192241;
 }
 
@@ -735,9 +741,19 @@ main .contieneArticulos img {
 /* MEDIA QUERY
 */
 @media (max-width: 768px) {
+  header .navbar .navbar-toggler {
+    border-color: #fbdfeb;
+    /* Cambia este valor al color que desees */
+  }
+  header .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23fbdfeb' class='bi bi-list' viewBox='0 0 16 16'%3e%3cpath d='M2.5 4.5A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5.5H3a.5.5 0 0 1-1 0H2a.5.5 0 0 1 .5-.5z'/%3e%3c/svg%3e");
+  }
   /*INDEX */
   main .sectionLogo h1, main .sectionLogo .principal h2, .principal main .sectionLogo h2 {
     font-size: 1.5rem;
+  }
+  main .sectionPromo {
+    margin: 0.625rem 0.625rem 0.625rem 0.625rem;
   }
   main .sectionPromo h2 {
     font-size: 1.5rem;
@@ -770,10 +786,19 @@ main .contieneArticulos img {
     align-items: center;
   }
   /*FOOTER*/
-  .sectionRedes h5 {
-    font-size: 1rem;
+  footer .sectionFooter {
+    justify-content: space-evenly;
+  }
+  footer .sectionFooter .sectionRedes {
+    justify-content: center;
+  }
+  footer .sectionFooter .sectionRedes h5 {
+    display: none;
   }
   /*CONTACTANOS*/
+  main .sectionConsulta {
+    margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  }
   main .sectionConsulta h2 {
     font-size: 1.5rem;
   }
@@ -784,6 +809,10 @@ main .contieneArticulos img {
     margin: 0%;
     width: 18.75rem;
     height: 9.375rem;
+  }
+  /*SOBRE NOSOTROS*/
+  .presentacion {
+    margin: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
   }
   /*HOMBRES*/
   .mainH .contenedor {
@@ -838,6 +867,9 @@ main .contieneArticulos img {
     font-size: 1rem;
   }
   /*REGISTRO*/
+  main .registrate {
+    margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  }
   main .registrate h1, main .registrate .principal h2, .principal main .registrate h2 {
     font-size: 1.125rem;
   }
@@ -853,6 +885,9 @@ main .contieneArticulos img {
   /*PROMOCIONES*/
   main .promosMes {
     margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
   main .principal {
     margin-top: 3.125rem;
@@ -868,6 +903,10 @@ main .contieneArticulos img {
   main .sectionTratamiento h2 {
     font-size: 1.375rem;
   }
+  /*TECNOLOGIA*/
+  main .sectionSecundaria div {
+    margin: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+  }
 }
 @media (max-width: 425px) {
   /*INDEX */
@@ -876,6 +915,10 @@ main .contieneArticulos img {
   }
   main .sectionPromo h2 {
     font-size: 1.375rem;
+  }
+  main .sectionTratamiento {
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
   }
   main .sectionTratamiento h2 {
     font-size: 1.375rem;
@@ -905,8 +948,14 @@ main .contieneArticulos img {
     align-items: center;
   }
   /*FOOTER*/
-  .sectionRedes h5 {
-    font-size: 1rem;
+  footer .sectionFooter {
+    justify-content: space-evenly;
+  }
+  footer .sectionFooter .sectionRedes {
+    justify-content: center;
+  }
+  footer .sectionFooter .sectionRedes h5 {
+    display: none;
   }
   /*CONTACTANOS*/
   main .sectionConsulta h2 {
@@ -1001,6 +1050,8 @@ main .contieneArticulos img {
   /*PROMOCIONES*/
   main .promosMes {
     margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
+    margin-top: 3.125rem;
   }
   main .principal {
     margin-top: 3.125rem;
@@ -1069,8 +1120,14 @@ main .contieneArticulos img {
     align-items: center;
   }
   /*FOOTER*/
-  .sectionRedes h5 {
-    font-size: 0.875rem;
+  footer .sectionFooter {
+    justify-content: space-evenly;
+  }
+  footer .sectionFooter .sectionRedes {
+    justify-content: center;
+  }
+  footer .sectionFooter .sectionRedes h5 {
+    display: none;
   }
   /*CONTACTANOS*/
   main .sectionConsulta h2 {
@@ -1193,6 +1250,8 @@ main .contieneArticulos img {
   }
   /*TRATAMIENTO*/
   main .sectionTratamiento {
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
     margin-top: 3.125rem;
     margin-bottom: 1.25rem;
   }
