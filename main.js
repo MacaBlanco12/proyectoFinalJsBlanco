@@ -29,8 +29,6 @@ function agregarPromoAlCarrito(producto) {
     const carrito = muestraCarrito();
     carrito.push(producto);
     sessionStorage.setItem('carrito', JSON.stringify(carrito));
-
-
 }
 promociones.forEach(promo => {
     const divPromocion = document.createElement("div");
@@ -50,16 +48,10 @@ promociones.forEach(promo => {
     contenedorPromociones.appendChild(divPromocion);
     const agregar = divPromocion.querySelector(".agregar")
 
-    function agregaCarrito() {
-        alert("ARMA LA FUNCION DE AGREGAR AL CARRITO, DALE VAGA")
-    }
-
     agregar.addEventListener("click", () => {
         agregarPromoAlCarrito(promo);
         alert(`Producto agregado al carrito: ${promo.titulo} valor: ${promo.precioDespues}`);
     });
-
-
 });
 
 
