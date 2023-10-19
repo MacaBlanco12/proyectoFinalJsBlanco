@@ -1,5 +1,6 @@
 const promociones = [
     {
+
         titulo: "Cavado ",
         descuento: "20% OFF",
         precioAntes: "$4.000",
