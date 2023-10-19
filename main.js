@@ -20,6 +20,18 @@ const promociones = [
 ];
 const contenedorPromociones = document.getElementById("contenedorPromociones");
 
+function muestraCarrito() {
+    const carritoJSON = sessionStorage.getItem('carrito');
+    return carritoJSON ? JSON.parse(carritoJSON) : [];
+}
+
+function agregarPromoAlCarrito(producto) {
+    const carrito = muestraCarrito();
+    carrito.push(producto);
+    sessionStorage.setItem('carrito', JSON.stringify(carrito));
+
+
+}
 promociones.forEach(promo => {
     const divPromocion = document.createElement("div");
     divPromocion.classList.add("card");
@@ -41,9 +53,12 @@ promociones.forEach(promo => {
     function agregaCarrito() {
         alert("ARMA LA FUNCION DE AGREGAR AL CARRITO, DALE VAGA")
     }
-    
-    agregar.addEventListener("click", agregaCarrito)
-    
+
+    agregar.addEventListener("click", () => {
+        agregarPromoAlCarrito(promo);
+        alert(`Producto agregado al carrito: ${promo.titulo} valor: ${promo.precioDespues}`);
+    });
+
 
 });
 
