@@ -1,6 +1,11 @@
 const contenedorCarrito = document.getElementById("carrito");
 
+function vaciarCarrito(){
+    while (contenedorCarrito.firstChild) {
+        contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+    }
 
+}
 function muestraCarrito() {
     const carritoJSON = localStorage.getItem('carrito');
     return carritoJSON ? JSON.parse(carritoJSON) : [];
@@ -21,5 +26,24 @@ function mostrarPromocionesEnCarrito() {
         contenedorCarrito.appendChild(divPromocionCarrito);
     });
 }
+mostrarPromocionesEnCarrito()
 
-mostrarPromocionesEnCarrito();
+const botonVaciar = document.getElementById("vaciarCarrito");
+botonVaciar.addEventListener("click", () => {
+    vaciarCarrito()
+    Swal.fire({
+        title: 'Se vacio tu carrito'
+    })})
+
+const botonSigueComprando = document.getElementById("agregaMasItems");
+botonSigueComprando.addEventListener("click", () => {
+    window.location.href = 'promociones.html';
+
+})
+const botonFinalizarCompra = document.getElementById("finalizarCompra");
+botonFinalizarCompra.addEventListener("click", () => {
+    Swal.fire({
+        title: 'Gracias por tu compra!!'
+    })
+})
+
