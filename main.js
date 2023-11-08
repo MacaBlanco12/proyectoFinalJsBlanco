@@ -1,6 +1,4 @@
 
-
-const contenedorCodigo = document.getElementById("contenedorCodigo");
 const contenedorPromociones = document.getElementById("contenedorPromociones");
 const contenedorItems = document.getElementById("itemsCarrito")
 function muestraCarrito() {
@@ -12,14 +10,7 @@ function agregarPromoAlCarrito(promo) {
     const carrito = muestraCarrito();
     carrito.push(promo);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    const divCodigoPromo = document.createElement("div");
-    divCodigoPromo.classList.add("card");
-    divCodigoPromo.innerHTML = `
-    <div class="contieneTitulo">
-            <h5 class="titulo">${promo.titulo}</h5>
-        </div>
-    `
-    contenedorCodigo.appendChild(divCodigoPromo);
+  
 }
 
 fetch("../promos.json")
