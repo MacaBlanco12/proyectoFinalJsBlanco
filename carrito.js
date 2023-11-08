@@ -3,6 +3,8 @@ const contenedorCarrito = document.getElementById("carrito");
 function vaciarCarrito(){
     while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+        sessionStorage.clear();
+
     }
 
 }
@@ -11,7 +13,7 @@ function muestraCarrito() {
     return carritoJSON ? JSON.parse(carritoJSON) : [];
 }
 
-function mostrarPromocionesEnCarrito() {
+function mostrarPromocionesEnCarrito(promo) {
     const carrito = muestraCarrito();
 
     carrito.forEach(promo => {
