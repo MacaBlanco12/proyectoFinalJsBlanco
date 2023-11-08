@@ -1,4 +1,4 @@
-const promociones = [
+/*const promociones = [
     {
 
         titulo: "Cavado ",
@@ -20,16 +20,17 @@ const promociones = [
     }
 ];
 const contenedorPromociones = document.getElementById("contenedorPromociones");
-
+const contenedorItems = document.getElementById("itemsCarrito")
 function muestraCarrito() {
-    const carritoJSON = sessionStorage.getItem('carrito');
+    const carritoJSON = localStorage.getItem('carrito');
     return carritoJSON ? JSON.parse(carritoJSON) : [];
 }
 
 function agregarPromoAlCarrito(producto) {
     const carrito = muestraCarrito();
     carrito.push(producto);
-    sessionStorage.setItem('carrito', JSON.stringify(carrito));
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    
 }
 promociones.forEach(promo => {
     const divPromocion = document.createElement("div");
@@ -56,6 +57,29 @@ promociones.forEach(promo => {
 });
 
 
+*/
+const contenedorPromociones = document.getElementById("contenedorPromociones");
 
+fetch("../promos.json")
+    .then(Response => Response.json())
+    .then(data => {
+        const promociones = data.promos
+        promociones.forEach(promo => {
+            const divPromocion = document.createElement("div");
+            divPromocion.classList.add("card");
+            divPromocion.innerHTML = `
+        <div class="contieneTitulo">
+            <h5 class="titulo">${promo.titulo}</h5>
+        </div>
+        <ul class="listadoPrecios">
+            <li class="tachado">${promo.descuento}</li>
+            <li class="precioFinal"><del>${promo.precioAntes}</del> ${promo.precioDespues}</li>
+        </ul>
+        <div class="card-body">
+        <button id="agregar" class="agregar">La quiero</button>
+    </div>`
 
-
+            contenedorPromociones.appendChild(divPromocion);
+            const agregar = divPromocion.querySelector(".agregar")
+        })
+    })
