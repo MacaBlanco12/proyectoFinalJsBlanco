@@ -1,4 +1,6 @@
 
+
+const contenedorCodigo = document.getElementById("contenedorCodigo");
 const contenedorPromociones = document.getElementById("contenedorPromociones");
 const contenedorItems = document.getElementById("itemsCarrito")
 function muestraCarrito() {
@@ -6,11 +8,18 @@ function muestraCarrito() {
     return carritoJSON ? JSON.parse(carritoJSON) : [];
 }
 
-function agregarPromoAlCarrito(producto) {
+function agregarPromoAlCarrito(promo) {
     const carrito = muestraCarrito();
-    carrito.push(producto);
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-    
+    carrito.push(promo);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    const divCodigoPromo = document.createElement("div");
+    divCodigoPromo.classList.add("card");
+    divCodigoPromo.innerHTML = `
+    <div class="contieneTitulo">
+            <h5 class="titulo">${promo.titulo}</h5>
+        </div>
+    `
+    contenedorCodigo.appendChild(divCodigoPromo);
 }
 
 fetch("../promos.json")
@@ -36,9 +45,26 @@ fetch("../promos.json")
             const agregar = divPromocion.querySelector(".agregar")
             agregar.addEventListener("click", () => {
                 agregarPromoAlCarrito(promo);
-                alert(`Producto agregado al carrito: ${promo.titulo} valor: ${promo.precioDespues}`);
+                Swal.fire({
+                    title: 'Agregaste a tu carrito con éxito',
+                    text: '¿Quieres seguir agregando?',
+                    icon: 'success',
+                    showCancelButton: true,
+                    confirmButtonText: 'Sí',
+                    cancelButtonText: 'No'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'promociones.html';
+
+                    } else if (result.dismiss === Swal.DismissReason.cancel) {
+                        window.location.href = 'carrito.html';
+
+
+                    }
+                });
+
             });
-            
+
         })
 
     })
