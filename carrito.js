@@ -3,17 +3,18 @@ const contenedorCarrito = document.getElementById("carrito");
 function vaciarCarrito(){
     while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
-        sessionStorage.clear();
+        sessionStorage.clear()
 
+        
     }
 
 }
 function muestraCarrito() {
-    const carritoJSON = localStorage.getItem('carrito');
+    const carritoJSON = sessionStorage.getItem('carrito');
     return carritoJSON ? JSON.parse(carritoJSON) : [];
 }
 
-function mostrarPromocionesEnCarrito(promo) {
+function mostrarPromocionesEnCarrito() {
     const carrito = muestraCarrito();
 
     carrito.forEach(promo => {

@@ -1,42 +1,49 @@
 {
     "promos": [
         {
+            "id": "1",
             "titulo": "cavado",
             "descuento": "20% OFF",
             "precioAntes": "$4.000",
             "precioDespues": "3.200"
         },
         {
+            "id": "2",
             "titulo": "Axilas",
             "descuento": "20% OFF",
             "precioAntes": "$4.000",
             "precioDespues": "$3.200"
         },
         {
+            "id": "3",
             "titulo": "Tiro de cola",
             "descuento": "20% OFF",
             "precioAntes": "$3.600",
             "precioDespues": "$2.880"
         },
         {
+            "id": "4",
             "titulo": "Piernas",
             "descuento": "25% OFF",
             "precioAntes": "$9.000",
             "precioDespues": "$6.750"
         },
         {
+            "id": "5",
             "titulo": "Media pierna",
             "descuento": "20% OFF",
             "precioAntes": "$8.000",
             "precioDespues": "$6.400"
         },
         {
+            "id": "6",
             "titulo": "Bozo",
             "descuento": "10% OFF",
             "precioAntes": "$3.600",
             "precioDespues": "$3.240"
         },
         {
+            "id": "7",
             "titulo": "Rostro completo",
             "descuento": "30% OFF",
             "precioAntes": "$12.000",
