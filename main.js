@@ -3,7 +3,7 @@ const promosAgregadasAlCarrito = [];
 
 const contenedorPromociones = document.getElementById("contenedorPromociones");
 function muestraCarrito() {
-    const carritoJSON = sesi.getItem('carrito');
+    const carritoJSON = sessionStorage.getItem('carrito');
     return carritoJSON ? JSON.parse(carritoJSON) : [];
 }
 
@@ -23,16 +23,17 @@ fetch("../promos.json")
             const divPromocion = document.createElement("div");
             divPromocion.classList.add("card");
             divPromocion.innerHTML = `
-        <div class="contieneTitulo">
-            <h5 class="titulo">${promo.titulo}</h5>
-        </div>
-        <ul class="listadoPrecios">
-            <li class="tachado">${promo.descuento}</li>
-            <li class="precioFinal"><del>${promo.precioAntes}</del> ${promo.precioDespues}</li>
-        </ul>
-        <div class="card-body">
-        <button id="agregar" class="agregar">La quiero</button>
-    </div>`
+                <div class="contieneTitulo">
+                    <h5 class="titulo">${promo.titulo}</h5>
+                </div>
+                <ul class="listadoPrecios">
+                    <li class="tachado">${promo.descuento}</li>
+                    <li class="precioFinal"><del>${promo.precioAntes}</del> ${promo.precioDespues}</li>
+                </ul>
+                <div class="card-body">
+                <button id="agregar" class="agregar">La quiero</button>
+            
+            </div>`
 
             contenedorPromociones.appendChild(divPromocion);
             const agregar = divPromocion.querySelector(".agregar")
@@ -62,7 +63,21 @@ fetch("../promos.json")
                     Swal.fire({
                         title: 'Producto duplicado',
                         text: 'Este producto ya está en tu carrito',
-                        icon: 'error'
+                        icon: 'error',
+                        showCancelButton: true,
+                        confirmButtonText:'Ir al carrito',
+                        cancelButtonText:'Seguir comprando'
+
+                    })
+                    .then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = 'carrito.html';
+
+                        } else if (result.dismiss === Swal.DismissReason.cancel) {
+                            
+
+
+                        }
                     });
                 }
             });

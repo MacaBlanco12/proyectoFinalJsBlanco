@@ -1,11 +1,9 @@
 const contenedorCarrito = document.getElementById("carrito");
 
-function vaciarCarrito(){
+function vaciarCarrito() {
     while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
         sessionStorage.clear()
-
-        
     }
 
 }
@@ -21,9 +19,12 @@ function mostrarPromocionesEnCarrito() {
         const divPromocionCarrito = document.createElement("div");
         divPromocionCarrito.classList.add("item-carrito");
         divPromocionCarrito.innerHTML = `
+        <div class="item">
             <h5>${promo.titulo}</h5>
             <p>${promo.descuento}</p>
             <p><del>${promo.precioAntes}</del> ${promo.precioDespues}</p>
+            </div>
+            <button id="botonEliminar" class="botonEliminar">Eliminar</button>    
             
             `;
         contenedorCarrito.appendChild(divPromocionCarrito);
@@ -31,12 +32,14 @@ function mostrarPromocionesEnCarrito() {
 }
 mostrarPromocionesEnCarrito()
 
+
 const botonVaciar = document.getElementById("vaciarCarrito");
 botonVaciar.addEventListener("click", () => {
     vaciarCarrito()
     Swal.fire({
         title: 'Se vacio tu carrito'
-    })})
+    })
+})
 
 const botonSigueComprando = document.getElementById("agregaMasItems");
 botonSigueComprando.addEventListener("click", () => {
@@ -45,6 +48,7 @@ botonSigueComprando.addEventListener("click", () => {
 })
 const botonFinalizarCompra = document.getElementById("finalizarCompra");
 botonFinalizarCompra.addEventListener("click", () => {
+    vaciarCarrito();
     Swal.fire({
         title: 'Gracias por tu compra!!'
     })
